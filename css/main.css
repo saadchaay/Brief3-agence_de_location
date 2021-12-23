@@ -1,0 +1,385 @@
+:root {
+  --main-color: #6E2FF4;
+}
+
+body {
+  background: #f1f1f1;
+  font-family: 'Poppins';
+  margin: 0em 0px;
+  letter-spacing: 0.08em;
+}
+
+.call-section {
+  background: var(--main-color);
+  margin: 0px 0px;
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+  padding: 0em 30px;
+  height: 49px;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.call-section .phone-number {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: auto;
+}
+
+.call-section .phone-number img {
+  margin: .5em 0em;
+  width: 30px;
+  height: 30px;
+}
+
+.call-section .phone-number p {
+  margin-left: 1.5em;
+}
+
+.call-section h4 {
+  margin-top: .7em;
+  margin-right: 5em;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+ul {
+  list-style: none;
+}
+
+.container {
+  padding-left: 30px;
+  padding-right: 30px;
+  background: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  place-content: space-between;
+  margin-bottom: 0em;
+}
+
+.container a {
+  color: black;
+  font-size: 1.2em;
+  margin-left: 5em;
+}
+
+.container .logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  place-content: space-between;
+}
+
+.container .logo img {
+  width: 60px;
+  height: 60px;
+  margin-top: .4em;
+}
+
+.container .logo h2 {
+  margin-left: .8em;
+}
+
+.container .logo h2 span {
+  color: var(--main-color);
+}
+
+.container nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  place-content: space-between;
+  margin-right: 17em;
+  margin-top: 1.3em;
+}
+
+section {
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+section.start-title {
+  background: url(/images/start-title.jpg);
+  margin-top: 0em;
+  padding-top: 0em;
+  width: auto;
+  height: 600px;
+  color: white;
+}
+
+section.start-title .content-section {
+  padding-top: 13em;
+}
+
+section.start-title .content-section h1 {
+  margin: 0;
+  font-size: 4em;
+  display: block;
+  text-align: left;
+  -ms-flex-line-pack: center;
+      align-content: center;
+}
+
+section.start-title .content-section div {
+  border: 5px solid #5200FF;
+  width: 35%;
+}
+
+section.start-title .content-section h2 {
+  font-size: 2em;
+}
+
+section.start-title .cta-group {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+section.start-title .cta-group button {
+  margin-top: 3em;
+  border: none;
+  border-radius: 10px;
+  padding: .5em .1em .5em .5em;
+  font-size: 1.4em;
+  margin-left: .3em;
+  -webkit-box-shadow: 0px 3.14765px 3.14765px rgba(0, 0, 0, 0.25);
+          box-shadow: 0px 3.14765px 3.14765px rgba(0, 0, 0, 0.25);
+  letter-spacing: 0em;
+}
+
+section.start-title .cta-group button .iconify {
+  width: 28px;
+  height: 28px;
+}
+
+section.start-title .cta-group button.cta-au {
+  background: #E5E5E5;
+  color: black;
+}
+
+section.start-title .cta-group button.cta-cu {
+  background: var(--main-color);
+  color: white;
+}
+
+section.why-us {
+  background: url(/images/bg-why-us.png);
+  width: auto;
+  height: 440px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  place-content: space-between;
+  padding: 3em 50px;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+section.why-us .content-text {
+  padding-left: 3em;
+}
+
+section.why-us .content-text div {
+  border: 5px solid #5200FF;
+  width: 60px;
+  margin: 1.5em 0em;
+}
+
+section.why-us .content-text p {
+  padding-top: 2em;
+  text-align: justify;
+}
+
+section.why-us .content-text p span {
+  color: var(--main-color);
+  font-weight: bold;
+}
+
+section.why-us .content-text button {
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  font-size: 1.2em;
+  background: var(--main-color);
+  color: white;
+  border: none;
+  border-radius: 10px;
+  padding: .8em 1.6em;
+  margin: 3em 0em;
+}
+
+section.service-cts {
+  background: var(--main-color);
+  color: white;
+  height: 320px;
+}
+
+section.service-cts h1 {
+  display: block;
+  text-align: center;
+  margin: 0;
+  padding: 1.2em;
+}
+
+section.service-cts div.content-sr {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  place-content: space-between;
+}
+
+section.service-cts div.content-sr div {
+  margin-left: 1.4em;
+}
+
+section.service-cts div.content-sr div p {
+  text-align: left;
+}
+
+section.offer-week {
+  color: black;
+  height: 500px;
+  margin: 0em 35px;
+}
+
+section.offer-week h1 {
+  text-align: center;
+  margin: 0;
+  padding: 1.2em;
+}
+
+section.offer-week img {
+  width: 550px;
+  height: 380px;
+}
+
+section.offer-week .content-inside {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+section.offer-week .content-inside h2 {
+  margin-left: 6em;
+}
+
+section.offer-week .content-inside h2 span {
+  color: var(--main-color);
+}
+
+section.offer-week .content-inside .detail-offer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  place-content: space-between;
+}
+
+section.offer-week .content-inside .detail-offer .offer-tl {
+  font-size: 1.2em;
+  font-weight: bold;
+  margin-top: 0em;
+}
+
+section.offer-week .content-inside .detail-offer .offer-tl li {
+  padding-bottom: 1.2em;
+}
+
+section.offer-week .content-inside .detail-offer .offer-res {
+  font-size: 1.1em;
+  margin-top: 0em;
+  margin-left: 6em;
+}
+
+section.offer-week .content-inside .detail-offer .offer-res li {
+  padding-bottom: 1.45em;
+}
+
+section.offer-week .content-inside button {
+  border: none;
+  border-radius: 9px;
+  background: var(--main-color);
+  padding: .6em 1.3em;
+  color: white;
+  margin-left: 30em;
+  font-size: .9em;
+}
+
+section.offer-week .content-inside button img {
+  width: 20px;
+  height: 20px;
+}
+
+section.news-updates {
+  margin: 0 35px;
+  text-align: center;
+}
+
+section.news-updates h1 {
+  text-align: center;
+}
+
+section.news-updates .all-items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+section.news-updates .all-items div .first-one .second-one .third-one {
+  border: 2px solid #B8B8B8;
+  border-radius: 10px;
+}
+
+section.news-updates .all-items img {
+  border-radius: 10px;
+  width: 300px;
+  height: 200px;
+}
+
+section.news-updates .all-items .date-items {
+  border: none;
+  background: var(--main-color);
+  margin: 0 7.5em;
+  border-radius: 10px;
+  color: white;
+}
+
+section.news-updates .all-items .first-one div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.cnt-footer {
+  background: var(--main-color);
+  border: 20px solid var(--main-color);
+  width: auto;
+  height: 300px;
+  margin-top: 10em;
+}
+/*# sourceMappingURL=main.css.map */
