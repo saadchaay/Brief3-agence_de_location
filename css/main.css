@@ -65,6 +65,8 @@ ul {
   display: flex;
   place-content: space-between;
   margin-bottom: 0em;
+  -webkit-filter: drop-shadow(2px 6px 8px rgba(128, 128, 128, 0.7));
+          filter: drop-shadow(2px 6px 8px rgba(128, 128, 128, 0.7));
 }
 
 .container a {
@@ -342,12 +344,23 @@ section.news-updates .all-items {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 4em;
 }
 
-section.news-updates .all-items div .first-one .second-one .third-one {
+section.news-updates .all-items div.first-one {
+  border: 2px solid #B8B8B8;
+  border-radius: 10px;
+}
+
+section.news-updates .all-items div.second-one {
+  border: 2px solid #B8B8B8;
+  border-radius: 10px;
+}
+
+section.news-updates .all-items div.third-one {
   border: 2px solid #B8B8B8;
   border-radius: 10px;
 }
@@ -355,18 +368,98 @@ section.news-updates .all-items div .first-one .second-one .third-one {
 section.news-updates .all-items img {
   border-radius: 10px;
   width: 300px;
-  height: 200px;
+  height: 180px;
 }
 
-section.news-updates .all-items .date-items {
+section.news-updates .all-items .items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 2em;
+}
+
+section.news-updates .all-items .items p {
+  font-size: 0.6em;
+  text-align: left;
+}
+
+section.news-updates .all-items .items .date-items {
   border: none;
   background: var(--main-color);
-  margin: 0 7.5em;
+  margin-right: 2.1em;
   border-radius: 10px;
+  color: white;
+  text-align: center;
+  padding: 0em .4;
+  margin-bottom: 2em;
+}
+
+section.news-updates .all-items .items .date-items p {
+  font-size: .9em;
+  text-align: center;
+  margin: 0.5em 0em;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+section.news-updates .all-items .items h4 {
+  font-size: .82em;
+  text-align: justify;
+}
+
+footer {
+  background: var(--main-color);
+  border: 20px solid var(--main-color);
+  width: auto;
+  height: 300px;
+  margin-top: 5em;
+}
+
+footer .logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  place-content: center;
+}
+
+footer .logo img {
+  width: 120px;
+  height: 120px;
+  margin-top: -1em;
+}
+
+footer .logo h2 {
+  margin-right: auto;
+}
+
+footer .logo h2 span {
   color: white;
 }
 
-section.news-updates .all-items .first-one div {
+footer .cnt-footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+footer .cnt-footer li {
+  font-size: .9em;
+  list-style: inside;
+}
+
+footer .cnt-footer li span {
+  -webkit-text-decoration-line: underline;
+          text-decoration-line: underline;
+}
+
+footer .social-media {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -375,11 +468,188 @@ section.news-updates .all-items .first-one div {
           justify-content: center;
 }
 
-.cnt-footer {
+footer .social-media .iconify {
+  width: 40px;
+  height: 40px;
+}
+
+footer .social-media li {
+  margin-left: 2em;
+  margin-right: 2em;
+}
+
+:root {
+  --main-color: #6E2FF4;
+}
+
+section.title-sec {
+  color: white;
+  background: url(/images/young.jpg);
+  height: 350px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+section.title-sec .iconify {
+  width: 120px;
+  height: 120px;
+}
+
+section.title-sec h1 {
+  font-size: 3em;
+  margin-top: 0;
+}
+
+section.title-sec p {
+  margin-top: 7em;
+}
+
+section.contact-form {
+  position: absolute;
+  background: white;
+  top: 25em;
+  margin: 2em 8em;
+  padding: 0 0em 3em 0em;
+  -webkit-filter: drop-shadow(2px 6px 8px rgba(128, 128, 128, 0.6));
+          filter: drop-shadow(2px 6px 8px rgba(128, 128, 128, 0.6));
+}
+
+section.contact-form h3 {
+  display: block;
+  text-align: center;
+}
+
+section.contact-form form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+section.contact-form ::-webkit-input-placeholder {
+  color: gray;
+  font-family: 'Poppins';
+  font-size: .9em;
+  padding-left: 1em;
+}
+
+section.contact-form :-ms-input-placeholder {
+  color: gray;
+  font-family: 'Poppins';
+  font-size: .9em;
+  padding-left: 1em;
+}
+
+section.contact-form ::-ms-input-placeholder {
+  color: gray;
+  font-family: 'Poppins';
+  font-size: .9em;
+  padding-left: 1em;
+}
+
+section.contact-form ::placeholder {
+  color: gray;
+  font-family: 'Poppins';
+  font-size: .9em;
+  padding-left: 1em;
+}
+
+section.contact-form div {
+  margin: 1em 5em;
+}
+
+section.contact-form label {
+  font-size: .8em;
+}
+
+section.contact-form input, section.contact-form textarea {
+  background: #dfdfdf;
+  border: #dfdfdf;
+  display: block;
+  margin: .8em 0;
+}
+
+section.contact-form input[type="text"], section.contact-form input[type="email"], section.contact-form input[type="number"] {
+  width: 170%;
+  height: 40px;
+}
+
+section.contact-form textarea {
+  width: 100%;
+  height: 70%;
+}
+
+section.contact-form textarea ::-webkit-input-placeholder {
+  padding-top: 4em;
+}
+
+section.contact-form textarea :-ms-input-placeholder {
+  padding-top: 4em;
+}
+
+section.contact-form textarea ::-ms-input-placeholder {
+  padding-top: 4em;
+}
+
+section.contact-form textarea ::placeholder {
+  padding-top: 4em;
+}
+
+section.contact-form .button-sec {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+section.contact-form .button-sec div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0 0;
+}
+
+section.contact-form .button-sec div span {
+  font-size: .7em;
+  margin-left: .4em;
+}
+
+section.contact-form .button-sec button {
   background: var(--main-color);
-  border: 20px solid var(--main-color);
-  width: auto;
-  height: 300px;
-  margin-top: 10em;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  padding: .6em 2em;
+  font-size: 1em;
+  font-family: 'Poppins';
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+section.location {
+  margin-top: 25em;
+  text-align: center;
+}
+
+section.location iframe {
+  width: 90%;
 }
 /*# sourceMappingURL=main.css.map */
