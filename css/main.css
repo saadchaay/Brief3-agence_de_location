@@ -1235,4 +1235,219 @@ section.gallery-sec .filter-bar .find-car button {
 section.gallery-sec .filter-bar .find-car button:hover {
   cursor: pointer;
 }
+
+section.content-page {
+  margin: 0;
+  padding: 0;
+  margin-bottom: -10em;
+}
+
+section.content-page .top-background img {
+  width: 100%;
+}
+
+section.content-page .form-book {
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+  height: auto;
+  top: -200px;
+  background: rgba(110, 47, 244, 0.45);
+  border: 2px solid #B8B8B8;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: .5em 3em;
+  color: white;
+}
+
+section.content-page .form-book .title-form {
+  margin-bottom: 2.5em;
+}
+
+section.content-page .form-book .title-form h4 {
+  margin-top: -1em;
+}
+
+section.content-page .form-book .filter-date {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+section.content-page .form-book .filter-date .cars-icon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background: white;
+  margin-left: 1em;
+}
+
+section.content-page .form-book .filter-date .cars-icon img {
+  width: 35px;
+  height: 35px;
+  margin-left: .4em;
+}
+
+section.content-page .form-book .filter-date .cars-icon input {
+  border: none;
+  margin-left: 1em;
+  padding-right: 7em;
+}
+
+section.content-page .form-book .filter-date .date-inputs {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+section.content-page .form-book .filter-date .date-inputs .date {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background: white;
+  margin-left: .5em;
+}
+
+section.content-page .form-book .filter-date .date-inputs .date img {
+  width: 30px;
+  height: 30px;
+  margin: .3em;
+}
+
+section.content-page .form-book .filter-date .date-inputs .date input {
+  border: none;
+  margin-left: 1em;
+  padding-right: 1.2em;
+}
+
+section.content-page .form-book .filter-date button {
+  background: var(--main-color);
+  color: white;
+  border: none;
+  padding: 0 3em;
+  margin-left: 3em;
+  font-weight: bold;
+}
+
+section.content-page .form-book .vehicles-type {
+  margin-top: 2.5em;
+}
+
+section.content-page .form-book .vehicles-type .container {
+  background: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  font-size: 1.1em;
+  margin: 0 2em;
+}
+
+section.content-page .form-book .vehicles-type .container div {
+  margin: .4em 0;
+}
+
+section.content-page .form-book .vehicles-type .container div input[type=radio] {
+  width: 1.5em;
+  height: 1.5em;
+}
+
+section.content-page .form-book .gearbox-type .content-inside {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+section.content-page .form-book .gearbox-type .content-inside div {
+  margin: .8em 1.6em;
+}
+
+section.content-page .form-book .gearbox-type .content-inside div h4 {
+  position: absolute;
+  top: 516px;
+  font-size: 1.1em;
+}
+
+section.content-page .form-book .gearbox-type .content-inside div .auto-cta {
+  margin-left: 2.3em;
+}
+
+section.content-page .form-book .gearbox-type .content-inside div .manual-cta {
+  margin-left: 3.3em;
+}
+
+section.content-page .form-book .gearbox-type .content-inside div .moto-cta {
+  margin-left: 4.3em;
+}
+
+section.content-page .form-book .fuel-type .chooces {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+section.content-page .form-book .fuel-type .chooces div {
+  margin: 0 4em;
+}
+
+section.content-page .form-book .fuel-type .chooces div input[type=radio] {
+  width: 1.5em;
+  height: 1.5em;
+}
+
+section.content-page .form-book .rent-days {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  margin: .8em 0;
+}
+
+section.content-page .form-book .rent-days input[type="number"] {
+  margin-left: 2em;
+  margin-top: 1em;
+  width: 15%;
+  height: 25px;
+}
+
+section.content-page .form-book .get-total {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 3em 6em;
+}
+
+section.content-page .form-book .get-total button {
+  font-size: 1.1em;
+  border: none;
+  background: var(--main-color);
+  color: white;
+  padding: .8em 2.5em;
+}
 /*# sourceMappingURL=main.css.map */

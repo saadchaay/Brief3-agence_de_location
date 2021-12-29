@@ -1,0 +1,157 @@
+section.content-page {
+    margin: 0;
+    padding: 0;
+    margin-bottom: -10em;
+    .top-background {
+        img {
+            width: 100%;
+        }
+    }
+    .form-book {
+        position: relative;
+        margin-left: auto;
+        margin-right: auto;
+        width: 80%;
+        height: auto;
+        top: -200px;
+        background: rgba(110, 47, 244, 0.45);
+        border: 2px solid #B8B8B8;
+        box-sizing: border-box;
+        padding: .5em 3em;
+        color: white;
+        .title-form {
+            margin-bottom: 2.5em;
+            h4 {
+                margin-top: -1em;
+            }
+        }
+        .filter-date {
+            display: flex;
+            justify-content: space-between;
+            
+            .cars-icon {
+                display: flex;
+                justify-content: center;
+                background: white;
+                margin-left: 1em;
+                img {
+                    width: 35px;
+                    height: 35px;
+                    margin-left: .4em;
+                }
+                input {
+                    border: none;
+                    margin-left: 1em;
+                    padding-right: 7em;
+                }
+            }
+            .date-inputs {
+                display: flex;
+                justify-content: center;
+                .date {
+                    display: flex;
+                    justify-content: center;
+                    background: white;
+                    margin-left: .5em;
+                    img {
+                        width: 30px;
+                        height: 30px;
+                        margin: .3em;
+    
+                    }
+                    input {
+                        border: none;
+                        margin-left: 1em;
+                        padding-right: 1.2em;
+                    }
+                }
+            }
+            button {
+                background: var(--main-color);
+                color: white;
+                border: none;
+                padding: 0 3em;
+                margin-left: 3em;
+                font-weight: bold;
+            }
+        }
+        .vehicles-type {
+            margin-top: 2.5em;
+            .container {
+                background: none;
+                display: flex;
+                justify-content: space-between;
+                font-size: 1.1em;
+                margin: 0 2em;
+                div {
+                    margin: .4em 0;
+                    input[type=radio] {
+                        width: 1.5em;
+                        height: 1.5em;
+                    }
+                }
+                
+            }
+        }
+        .gearbox-type {
+            .content-inside {
+                display: flex;
+                justify-content: center;
+                div {
+                    margin: .8em 1.6em;
+                    h4 {
+                        position: absolute;
+                        top: 516px;
+                        font-size: 1.1em;
+                    }
+                    .auto-cta {
+                        margin-left: 2.3em;
+                    }
+                    .manual-cta {
+                        margin-left: 3.3em;
+                    }
+                    .moto-cta {
+                        margin-left: 4.3em;
+                    }
+                }
+            }
+        }
+        .fuel-type {
+            .chooces {
+                display: flex;
+                justify-content: space-between;
+                div {
+                    margin: 0 4em;
+                    input[type=radio] {
+                        width: 1.5em;
+                        height: 1.5em;
+                    }
+                }
+            }
+        }
+        .rent-days {
+            display: flex;
+            justify-content: flex-start;
+            margin: .8em 0;
+            input[type="number"] {
+                margin-left: 2em;
+                margin-top: 1em;
+                width: 15%;
+                height: 25px;
+
+            }
+        }
+        .get-total {
+            display: flex;
+            justify-content: space-between;
+            margin: 3em 6em;
+            button {
+                font-size: 1.1em;
+                border: none;
+                background: var(--main-color);
+                color: white;
+                padding: .8em 2.5em;
+            }
+        }
+    }
+}
