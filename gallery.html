@@ -8,6 +8,9 @@
     <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
+
+<!-- header -->
+
     <header>
         <div class="call-section">
             <div class="phone-number">
@@ -32,69 +35,569 @@
         </div>
     </header>
 
+<!-- top background with page title -->
+
     <section class="title-pg">
         <h2>CARS LISTING</h2>
     </section>
     
     <section class="gallery-sec">
+
+    <!-- titles of car's type -->
+
         <div class="type-cars">
             <ul>
-                <li>Compact</li>
-                <li>Utilitaire</li>
-                <li>Berline</li>
-                <li>Citadine</li>
-                <li>Engine de chantier</li>
-                <li>Camion</li>
-                <li>Moto</li>
+                <li class="types">Compact</li>
+                <li class="types">Utilitaire</li>
+                <li class="types">Berline</li>
+                <li class="types">Citadine</li>
+                <li class="types">Engine de chantier</li>
+                <li class="types">Camion</li>
+                <li class="types">Moto</li>
             </ul>
         </div>
+
+        <!-- TODO: Change the content of type cars -->
+        <!-- TODO: Change language of type cars -->
+
+<!-- content main with cars description with filter bar-->
+
         <div class="main-content">
-            <div class="cars-bar">
+
+
+    <!-- content main with cars description -->
+
+            <div class="cars-bar" id='content'>
+
+    <!-- Utilitaire section -->
+            <div  id="utilitaire-cars">
                 <div class="car-desc">
-                    <img src="images/car-types/Compact/download.jpg" alt="">
+                    <img class="img-car" src="images/car-types/Utilitaire/ut5.jpg" alt="">
                     <div class="text-desc">
-                        <h4>VW POLO TRENDLINE 2.0 TDI</h4>
-                        <h6>Start from 21$/per a day</h6>
-                        <p>Vivamus eget nibh. Etiam cursus leo vel metus. Nulla facilisi.
-                            Aenean nec eros. Vestibulum ante ipsum primis in faucibus orci 
-                            luctus et ultrices posuere cubilia.</p>
+                        <h4>2022 Ford Transit</h4>
+                        <h6>Start from 16€/per a day</h6>
+                        <p>The Ford Transit, also known as the Ford T-Series in some markets, 
+                            is a family of light commercial vehicles manufactured by Ford since 1965,
+                            originally based on the FR layout, and now in its fourth generation. </p>
                         <button>
                             <img src="images/icon-book.svg" alt=""><a href="booking.html">Book Now</a>
                         </button>
                     </div>
                 </div>
                 <div class="car-desc">
-                    <img src="images/car-types/Compact/download.jpg" alt="">
+                    <img class="img-car" src="images/car-types/Utilitaire/ut2.jpg" alt="">
                     <div class="text-desc">
-                        <h4>VW POLO TRENDLINE 2.0 TDI</h4>
-                        <h6>Start from 21$/per a day</h6>
-                        <p>Vivamus eget nibh. Etiam cursus leo vel metus. Nulla facilisi.
-                            Aenean nec eros. Vestibulum ante ipsum primis in faucibus orci 
-                            luctus et ultrices posuere cubilia.</p>
+                        <h4>Renault Kangoo and Master ZE Hydrogen</h4>
+                        <h6>Start from 16€/per a day</h6>
+                        <p>Renault is taking its first steps in hydrogen. And for this, the French 
+                            manufacturer targets professionals. The Renault Kangoo and its big brother,
+                            the Master, will now be offered in electric versions fitted with a fuel cell.</p>
                         <button>
                             <img src="images/icon-book.svg" alt=""><a href="booking.html">Book Now</a>
                         </button>
                     </div>
                 </div>
                 <div class="car-desc">
-                    <img src="images/car-types/Compact/download.jpg" alt="">
+                    <img class="img-car" src="images/car-types/Utilitaire/ut3.jpg" alt="">
                     <div class="text-desc">
-                        <h4>VW POLO TRENDLINE 2.0 TDI</h4>
-                        <h6>Start from 21$/per a day</h6>
-                        <p>Vivamus eget nibh. Etiam cursus leo vel metus. Nulla facilisi.
-                            Aenean nec eros. Vestibulum ante ipsum primis in faucibus orci 
-                            luctus et ultrices posuere cubilia.</p>
+                        <h4>2022 DS Van</h4>
+                        <h6>Start from 16€/per a day</h6>
+                        <p>This utility vehicle has no chance of seeing the light of day, 
+                            except surprise, as it comes straight from the imagination
+                            of Auto-Moto who firmly believe in the success of this vehicle.</p>
+                        <button>
+                            <img src="images/icon-book.svg" alt=""><a href="booking.html">Book Now</a>
+                        </button>
+                    </div>
+                </div>
+                <div class="car-desc">
+                    <img class="img-car" src="images/car-types/Utilitaire/ut4.jpg" alt="">
+                    <div class="text-desc">
+                        <h4>Future Renault Kangoo (2020)</h4>
+                        <h6>Start from 16€/per a day</h6>
+                        <p>Future Renault Kangoo (2020) - Unveiled last spring as a concept
+                            car, the next generation of Renault Kangoo VU will hit 
+                            showrooms in fall 2020.</p>
+                        <button>
+                            <img src="images/icon-book.svg" alt=""><a href="booking.html">Book Now</a>
+                        </button>
+                    </div>
+                </div>
+                <div class="car-desc">
+                    <img class="img-car" src="images/car-types/Utilitaire/ut1.jpg" alt="">
+                    <div class="text-desc">
+                        <h4>2021 Peugeot e-Expert</h4>
+                        <h6>Start from 16€/per a day</h6>
+                        <p>Launched in 2016, the Peugeot Expert is now available in an unprecedented 
+                            electric version, while retaining its volume and payload.</p>
                         <button>
                             <img src="images/icon-book.svg" alt=""><a href="booking.html">Book Now</a>
                         </button>
                     </div>
                 </div>
             </div>
-            <div class="filter-bar">
+            <!--  -->
+
+
+    <!-- Berline section -->
+            <div class="disabled-sec" id="berline-cars">
+                <div class="car-desc">
+                    <img class="img-car" src="images/car-types/Utilitaire/ut5.jpg" alt="">
+                    <div class="text-desc">
+                        <h4>2022 Ford Transit</h4>
+                        <h6>Start from 16€/per a day</h6>
+                        <p>The Ford Transit, also known as the Ford T-Series in some markets, 
+                            is a family of light commercial vehicles manufactured by Ford since 1965,
+                            originally based on the FR layout, and now in its fourth generation. </p>
+                        <button>
+                            <img src="images/icon-book.svg" alt=""><a href="booking.html">Book Now</a>
+                        </button>
+                    </div>
+                </div>
+                <div class="car-desc">
+                    <img class="img-car" src="images/car-types/Utilitaire/ut2.jpg" alt="">
+                    <div class="text-desc">
+                        <h4>Renault Kangoo and Master ZE Hydrogen</h4>
+                        <h6>Start from 16€/per a day</h6>
+                        <p>Renault is taking its first steps in hydrogen. And for this, the French 
+                            manufacturer targets professionals. The Renault Kangoo and its big brother,
+                            the Master, will now be offered in electric versions fitted with a fuel cell.</p>
+                        <button>
+                            <img src="images/icon-book.svg" alt=""><a href="booking.html">Book Now</a>
+                        </button>
+                    </div>
+                </div>
+                <div class="car-desc">
+                    <img class="img-car" src="images/car-types/Utilitaire/ut3.jpg" alt="">
+                    <div class="text-desc">
+                        <h4>2022 DS Van</h4>
+                        <h6>Start from 16€/per a day</h6>
+                        <p>This utility vehicle has no chance of seeing the light of day, 
+                            except surprise, as it comes straight from the imagination
+                            of Auto-Moto who firmly believe in the success of this vehicle.</p>
+                        <button>
+                            <img src="images/icon-book.svg" alt=""><a href="booking.html">Book Now</a>
+                        </button>
+                    </div>
+                </div>
+                <div class="car-desc">
+                    <img class="img-car" src="images/car-types/Utilitaire/ut4.jpg" alt="">
+                    <div class="text-desc">
+                        <h4>Future Renault Kangoo (2020)</h4>
+                        <h6>Start from 16€/per a day</h6>
+                        <p>Future Renault Kangoo (2020) - Unveiled last spring as a concept
+                            car, the next generation of Renault Kangoo VU will hit 
+                            showrooms in fall 2020.</p>
+                        <button>
+                            <img src="images/icon-book.svg" alt=""><a href="booking.html">Book Now</a>
+                        </button>
+                    </div>
+                </div>
+                <div class="car-desc">
+                    <img class="img-car" src="images/car-types/Utilitaire/ut1.jpg" alt="">
+                    <div class="text-desc">
+                        <h4>2021 Peugeot e-Expert</h4>
+                        <h6>Start from 16€/per a day</h6>
+                        <p>Launched in 2016, the Peugeot Expert is now available in an unprecedented 
+                            electric version, while retaining its volume and payload.</p>
+                        <button>
+                            <img src="images/icon-book.svg" alt=""><a href="booking.html">Book Now</a>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <!--  -->
+
+    <!-- Moto section -->
+            <div class="disabled-sec" id="moto-type">
+                <div class="car-desc">
+                    <img class="img-car" src="images/car-types/Utilitaire/ut5.jpg" alt="">
+                    <div class="text-desc">
+                        <h4>2022 Ford Transit</h4>
+                        <h6>Start from 16€/per a day</h6>
+                        <p>The Ford Transit, also known as the Ford T-Series in some markets, 
+                            is a family of light commercial vehicles manufactured by Ford since 1965,
+                            originally based on the FR layout, and now in its fourth generation. </p>
+                        <button>
+                            <img src="images/icon-book.svg" alt=""><a href="booking.html">Book Now</a>
+                        </button>
+                    </div>
+                </div>
+                <div class="car-desc">
+                    <img class="img-car" src="images/car-types/Utilitaire/ut2.jpg" alt="">
+                    <div class="text-desc">
+                        <h4>Renault Kangoo and Master ZE Hydrogen</h4>
+                        <h6>Start from 16€/per a day</h6>
+                        <p>Renault is taking its first steps in hydrogen. And for this, the French 
+                            manufacturer targets professionals. The Renault Kangoo and its big brother,
+                            the Master, will now be offered in electric versions fitted with a fuel cell.</p>
+                        <button>
+                            <img src="images/icon-book.svg" alt=""><a href="booking.html">Book Now</a>
+                        </button>
+                    </div>
+                </div>
+                <div class="car-desc">
+                    <img class="img-car" src="images/car-types/Utilitaire/ut3.jpg" alt="">
+                    <div class="text-desc">
+                        <h4>2022 DS Van</h4>
+                        <h6>Start from 16€/per a day</h6>
+                        <p>This utility vehicle has no chance of seeing the light of day, 
+                            except surprise, as it comes straight from the imagination
+                            of Auto-Moto who firmly believe in the success of this vehicle.</p>
+                        <button>
+                            <img src="images/icon-book.svg" alt=""><a href="booking.html">Book Now</a>
+                        </button>
+                    </div>
+                </div>
+                <div class="car-desc">
+                    <img class="img-car" src="images/car-types/Utilitaire/ut4.jpg" alt="">
+                    <div class="text-desc">
+                        <h4>Future Renault Kangoo (2020)</h4>
+                        <h6>Start from 16€/per a day</h6>
+                        <p>Future Renault Kangoo (2020) - Unveiled last spring as a concept
+                            car, the next generation of Renault Kangoo VU will hit 
+                            showrooms in fall 2020.</p>
+                        <button>
+                            <img src="images/icon-book.svg" alt=""><a href="booking.html">Book Now</a>
+                        </button>
+                    </div>
+                </div>
+                <div class="car-desc">
+                    <img class="img-car" src="images/car-types/Utilitaire/ut1.jpg" alt="">
+                    <div class="text-desc">
+                        <h4>2021 Peugeot e-Expert</h4>
+                        <h6>Start from 16€/per a day</h6>
+                        <p>Launched in 2016, the Peugeot Expert is now available in an unprecedented 
+                            electric version, while retaining its volume and payload.</p>
+                        <button>
+                            <img src="images/icon-book.svg" alt=""><a href="booking.html">Book Now</a>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <!--  -->
+
+    <!-- Citadine section -->
+            <div class="disabled-sec" id="citadine-cars">
+                <div class="car-desc">
+                    <img class="img-car" src="images/car-types/Utilitaire/ut5.jpg" alt="">
+                    <div class="text-desc">
+                        <h4>2022 Ford Transit</h4>
+                        <h6>Start from 16€/per a day</h6>
+                        <p>The Ford Transit, also known as the Ford T-Series in some markets, 
+                            is a family of light commercial vehicles manufactured by Ford since 1965,
+                            originally based on the FR layout, and now in its fourth generation. </p>
+                        <button>
+                            <img src="images/icon-book.svg" alt=""><a href="booking.html">Book Now</a>
+                        </button>
+                    </div>
+                </div>
+                <div class="car-desc">
+                    <img class="img-car" src="images/car-types/Utilitaire/ut2.jpg" alt="">
+                    <div class="text-desc">
+                        <h4>Renault Kangoo and Master ZE Hydrogen</h4>
+                        <h6>Start from 16€/per a day</h6>
+                        <p>Renault is taking its first steps in hydrogen. And for this, the French 
+                            manufacturer targets professionals. The Renault Kangoo and its big brother,
+                            the Master, will now be offered in electric versions fitted with a fuel cell.</p>
+                        <button>
+                            <img src="images/icon-book.svg" alt=""><a href="booking.html">Book Now</a>
+                        </button>
+                    </div>
+                </div>
+                <div class="car-desc">
+                    <img class="img-car" src="images/car-types/Utilitaire/ut3.jpg" alt="">
+                    <div class="text-desc">
+                        <h4>2022 DS Van</h4>
+                        <h6>Start from 16€/per a day</h6>
+                        <p>This utility vehicle has no chance of seeing the light of day, 
+                            except surprise, as it comes straight from the imagination
+                            of Auto-Moto who firmly believe in the success of this vehicle.</p>
+                        <button>
+                            <img src="images/icon-book.svg" alt=""><a href="booking.html">Book Now</a>
+                        </button>
+                    </div>
+                </div>
+                <div class="car-desc">
+                    <img class="img-car" src="images/car-types/Utilitaire/ut4.jpg" alt="">
+                    <div class="text-desc">
+                        <h4>Future Renault Kangoo (2020)</h4>
+                        <h6>Start from 16€/per a day</h6>
+                        <p>Future Renault Kangoo (2020) - Unveiled last spring as a concept
+                            car, the next generation of Renault Kangoo VU will hit 
+                            showrooms in fall 2020.</p>
+                        <button>
+                            <img src="images/icon-book.svg" alt=""><a href="booking.html">Book Now</a>
+                        </button>
+                    </div>
+                </div>
+                <div class="car-desc">
+                    <img class="img-car" src="images/car-types/Utilitaire/ut1.jpg" alt="">
+                    <div class="text-desc">
+                        <h4>2021 Peugeot e-Expert</h4>
+                        <h6>Start from 16€/per a day</h6>
+                        <p>Launched in 2016, the Peugeot Expert is now available in an unprecedented 
+                            electric version, while retaining its volume and payload.</p>
+                        <button>
+                            <img src="images/icon-book.svg" alt=""><a href="booking.html">Book Now</a>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <!--  -->
+
+    <!-- Engine de chantier section -->
+            <div class="disabled-sec" id="e-chantier-cars">
+                <div class="car-desc">
+                    <img class="img-car" src="images/car-types/Utilitaire/ut5.jpg" alt="">
+                    <div class="text-desc">
+                        <h4>2022 Ford Transit</h4>
+                        <h6>Start from 16€/per a day</h6>
+                        <p>The Ford Transit, also known as the Ford T-Series in some markets, 
+                            is a family of light commercial vehicles manufactured by Ford since 1965,
+                            originally based on the FR layout, and now in its fourth generation. </p>
+                        <button>
+                            <img src="images/icon-book.svg" alt=""><a href="booking.html">Book Now</a>
+                        </button>
+                    </div>
+                </div>
+                <div class="car-desc">
+                    <img class="img-car" src="images/car-types/Utilitaire/ut2.jpg" alt="">
+                    <div class="text-desc">
+                        <h4>Renault Kangoo and Master ZE Hydrogen</h4>
+                        <h6>Start from 16€/per a day</h6>
+                        <p>Renault is taking its first steps in hydrogen. And for this, the French 
+                            manufacturer targets professionals. The Renault Kangoo and its big brother,
+                            the Master, will now be offered in electric versions fitted with a fuel cell.</p>
+                        <button>
+                            <img src="images/icon-book.svg" alt=""><a href="booking.html">Book Now</a>
+                        </button>
+                    </div>
+                </div>
+                <div class="car-desc">
+                    <img class="img-car" src="images/car-types/Utilitaire/ut3.jpg" alt="">
+                    <div class="text-desc">
+                        <h4>2022 DS Van</h4>
+                        <h6>Start from 16€/per a day</h6>
+                        <p>This utility vehicle has no chance of seeing the light of day, 
+                            except surprise, as it comes straight from the imagination
+                            of Auto-Moto who firmly believe in the success of this vehicle.</p>
+                        <button>
+                            <img src="images/icon-book.svg" alt=""><a href="booking.html">Book Now</a>
+                        </button>
+                    </div>
+                </div>
+                <div class="car-desc">
+                    <img class="img-car" src="images/car-types/Utilitaire/ut4.jpg" alt="">
+                    <div class="text-desc">
+                        <h4>Future Renault Kangoo (2020)</h4>
+                        <h6>Start from 16€/per a day</h6>
+                        <p>Future Renault Kangoo (2020) - Unveiled last spring as a concept
+                            car, the next generation of Renault Kangoo VU will hit 
+                            showrooms in fall 2020.</p>
+                        <button>
+                            <img src="images/icon-book.svg" alt=""><a href="booking.html">Book Now</a>
+                        </button>
+                    </div>
+                </div>
+                <div class="car-desc">
+                    <img class="img-car" src="images/car-types/Utilitaire/ut1.jpg" alt="">
+                    <div class="text-desc">
+                        <h4>2021 Peugeot e-Expert</h4>
+                        <h6>Start from 16€/per a day</h6>
+                        <p>Launched in 2016, the Peugeot Expert is now available in an unprecedented 
+                            electric version, while retaining its volume and payload.</p>
+                        <button>
+                            <img src="images/icon-book.svg" alt=""><a href="booking.html">Book Now</a>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <!--  -->
+
+    <!-- Camion section -->
+            <div class="disabled-sec" id="camion-cars">
+                <div class="car-desc">
+                    <img class="img-car" src="images/car-types/Utilitaire/ut5.jpg" alt="">
+                    <div class="text-desc">
+                        <h4>2022 Ford Transit</h4>
+                        <h6>Start from 16€/per a day</h6>
+                        <p>The Ford Transit, also known as the Ford T-Series in some markets, 
+                            is a family of light commercial vehicles manufactured by Ford since 1965,
+                            originally based on the FR layout, and now in its fourth generation. </p>
+                        <button>
+                            <img src="images/icon-book.svg" alt=""><a href="booking.html">Book Now</a>
+                        </button>
+                    </div>
+                </div>
+                <div class="car-desc">
+                    <img class="img-car" src="images/car-types/Utilitaire/ut2.jpg" alt="">
+                    <div class="text-desc">
+                        <h4>Renault Kangoo and Master ZE Hydrogen</h4>
+                        <h6>Start from 16€/per a day</h6>
+                        <p>Renault is taking its first steps in hydrogen. And for this, the French 
+                            manufacturer targets professionals. The Renault Kangoo and its big brother,
+                            the Master, will now be offered in electric versions fitted with a fuel cell.</p>
+                        <button>
+                            <img src="images/icon-book.svg" alt=""><a href="booking.html">Book Now</a>
+                        </button>
+                    </div>
+                </div>
+                <div class="car-desc">
+                    <img class="img-car" src="images/car-types/Utilitaire/ut3.jpg" alt="">
+                    <div class="text-desc">
+                        <h4>2022 DS Van</h4>
+                        <h6>Start from 16€/per a day</h6>
+                        <p>This utility vehicle has no chance of seeing the light of day, 
+                            except surprise, as it comes straight from the imagination
+                            of Auto-Moto who firmly believe in the success of this vehicle.</p>
+                        <button>
+                            <img src="images/icon-book.svg" alt=""><a href="booking.html">Book Now</a>
+                        </button>
+                    </div>
+                </div>
+                <div class="car-desc">
+                    <img class="img-car" src="images/car-types/Utilitaire/ut4.jpg" alt="">
+                    <div class="text-desc">
+                        <h4>Future Renault Kangoo (2020)</h4>
+                        <h6>Start from 16€/per a day</h6>
+                        <p>Future Renault Kangoo (2020) - Unveiled last spring as a concept
+                            car, the next generation of Renault Kangoo VU will hit 
+                            showrooms in fall 2020.</p>
+                        <button>
+                            <img src="images/icon-book.svg" alt=""><a href="booking.html">Book Now</a>
+                        </button>
+                    </div>
+                </div>
+                <div class="car-desc">
+                    <img class="img-car" src="images/car-types/Utilitaire/ut1.jpg" alt="">
+                    <div class="text-desc">
+                        <h4>2021 Peugeot e-Expert</h4>
+                        <h6>Start from 16€/per a day</h6>
+                        <p>Launched in 2016, the Peugeot Expert is now available in an unprecedented 
+                            electric version, while retaining its volume and payload.</p>
+                        <button>
+                            <img src="images/icon-book.svg" alt=""><a href="booking.html">Book Now</a>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <!--  -->
+
+                <div id="compact-cars">
+                    <div class="car-desc">
+                        <img class="img-car" src="images/car-types/Compact/cr3.jpg" alt="">
+                        <div class="text-desc">
+                            <h4>2021 Kia Forte</h4>
+                            <h6>Start from 14€/per a day</h6>
+                            <p>The 2021 Kia Forte fares well in our compact car rankings. 
+                                It comes loaded with safety and infotainment technology, 
+                                it has a spacious cabin, and it earns an above-average 
+                                predicted reliability score and fuel economy rating.</p>
+                            <button>
+                                <img src="images/icon-book.svg" alt=""><a href="booking.html">Book Now</a>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="car-desc">
+                        <img class="img-car" src="images/car-types/Compact/cr2.jpg" alt="">
+                        <div class="text-desc">
+                            <h4>2022 Honda Civic</h4>
+                            <h6>Start from 14€/per a day</h6>
+                            <p>The fully redesigned 2022 Honda Civic cruises to a high spot in
+                                 our compact car rankings on the strength of its sleek interior,
+                                  welcoming seating, and lively performance.</p>
+                            <button>
+                                <img src="images/icon-book.svg" alt=""><a href="booking.html">Book Now</a>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="car-desc">
+                        <img class="img-car" src="images/car-types/Compact/cr4.jpg" alt="">
+                        <div class="text-desc">
+                            <h4>2022 Toyota Corolla</h4>
+                            <h6>Start from 14€/per a day</h6>
+                            <p>The 2022 Toyota Corolla ranks in the middle of the compact car class.
+                                 The Corolla has great fuel economy, pleasant driving dynamics, user-friendly 
+                                 features, and many standard driver assistance features, 
+                                 but it also has restrained engine performance and a small trunk.</p>
+                            <button>
+                                <img src="images/icon-book.svg" alt=""><a href="booking.html">Book Now</a>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="car-desc">
+                        <img class="img-car" src="images/car-types/Compact/cr6.jpg" alt="">
+                        <div class="text-desc">
+                            <h4>2022 Subaru Impreza</h4>
+                            <h6>Start from 14€/per a day</h6>
+                            <p>The Subaru Impreza sits in the bottom half of our compact car rankings, 
+                                mostly because of its lackluster and unrefined powertrain. Positives 
+                                such as a comfortable, feature-laden interior and sure-footed 
+                                handling aren't enough to recommend it over more well-rounded classmates.</p>
+                            <button>
+                                <img src="images/icon-book.svg" alt=""><a href="booking.html">Book Now</a>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="car-desc">
+                        <img class="img-car" src="images/car-types/Compact/cr1.jpg" alt="">
+                        <div class="text-desc">
+                            <h4>2021 Volkswagen Golf</h4>
+                            <h6>Start from 14€/per a day</h6>
+                            <p>The 2021 Volkswagen Golf has lively handling, great cargo space, 
+                                and a high-end cabin, but its infotainment system is disappointing
+                                 and its acceleration could be better on the highway.</p>
+                            <button>
+                                <img src="images/icon-book.svg" alt=""><a href="booking.html">Book Now</a>
+                            </button>
+                        </div>
+                    </div>
+                </div>
 
             </div>
+
+    <!-- filter bar -->
+
+            <div class="filter-bar">
+                <div class="title-filter">
+                    <h3>Find Best Rental Car</h3>
+                </div>
+                <div class="filter-content">
+                    <div>
+                        <label for="pick up location"><p>Picking Up location:</p> </label>
+                        <input type="text" name="pick_location" placeholder="Airport or Anywhere">
+                    </div>
+                    <div>
+                        <label for="pick up location"><p> Dropping Off Location:</p> </label>
+                        <input type="text" name="pick_location" placeholder="Airport or Anywhere">
+                    </div>
+                    <div>
+                        <label for="pick up location"><p> Picking Up Date:</p> </label>
+                        <input type="text" name="pick_location" placeholder="dd/mm/yyyy">
+                    </div>
+                    <div>
+                        <label for="pick up location"><p> Picking Up Hour:</p> </label>
+                        <input type="text" name="pick_location" placeholder="-- : --    --">
+                    </div>
+                    <div>
+                        <label for="pick up location"><p> Select Category:</p> </label>
+                        <input type="" name="pick_location" placeholder="Select Category">
+                    </div>
+                    <div>
+                        <label for="pick up location"><p> Select Type:</p> </label>
+                        <input type="text" name="pick_location" placeholder="Select Type">
+                    </div>
+                </div>
+                <div class="find-car">
+                    <button type="submit">FIND CAR</button>
+                </div>
+            </div>
         </div>
+
     </section>
+
+<!-- footer  -->
 
     <footer>
         <div class="logo">
@@ -136,5 +639,7 @@
         </div>
     </footer>
     <script src="https://code.iconify.design/2/2.1.0/iconify.min.js"></script>
+    <script src="js/app.js"></script>
+
 </body>
 </html>

@@ -527,7 +527,7 @@
     padding-right: 30px;
   }
   section.start-title {
-    background: url(/images/start-title.jpg);
+    background-image: url(/images/image-bg-titlw.svg);
     margin-top: 0em;
     padding-top: 0em;
     width: auto;
@@ -587,7 +587,7 @@
     color: white;
   }
   section.why-us {
-    background: url(/images/bg-why-us.png);
+    background-image: url(/images/whyUs-bg.svg);
     width: auto;
     height: auto;
     padding: 1em 50px;
@@ -1063,15 +1063,14 @@ section.title-pg h2 {
 }
 
 section.gallery-sec {
-  margin: 2.5em 30px;
+  margin: 2em 30px;
 }
 
 section.gallery-sec .type-cars {
-  margin-bottom: 3em;
+  margin-bottom: 2em;
 }
 
 section.gallery-sec .type-cars ul {
-  border: 2px solid gray;
   font-size: .9em;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1083,11 +1082,157 @@ section.gallery-sec .type-cars ul {
 
 section.gallery-sec .type-cars ul li {
   margin-right: 3em;
+  background: white;
+  padding: .5em 1em;
+  border-bottom: 3px solid var(--main-color);
+}
+
+section.gallery-sec .type-cars ul li:hover {
+  cursor: pointer;
+  background: var(--main-color);
+  border-bottom: 3px solid white;
+  color: white;
+  -webkit-transition: all .5s;
+  transition: all .5s;
+  z-index: 1;
+}
+
+section.gallery-sec .main-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 0;
+}
+
+section.gallery-sec .main-content .disabled-sec {
+  display: none;
+}
+
+section.gallery-sec .main-content .cars-bar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 170%;
+}
+
+section.gallery-sec .main-content .cars-bar .car-desc {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border: 2px solid #B8B8B8;
+  margin: 0 .5em 1em 0;
+}
+
+section.gallery-sec .main-content .cars-bar .car-desc .img-car {
+  width: 350px;
+  height: auto;
+}
+
+section.gallery-sec .main-content .cars-bar .car-desc .text-desc {
+  margin: 0 1em;
+  margin-top: -1em;
+}
+
+section.gallery-sec .main-content .cars-bar .car-desc .text-desc p {
+  font-size: .9em;
+}
+
+section.gallery-sec .main-content .cars-bar .car-desc .text-desc h6 {
+  margin: 0 0 .5em 2em;
+  color: var(--main-color);
+}
+
+section.gallery-sec .main-content .cars-bar .car-desc .text-desc button {
+  border: none;
+  border-radius: 5px;
+  padding: .5em 1em;
+  background: var(--main-color);
+  margin-bottom: 1em;
+  font-weight: bold;
 }
 
 section.gallery-sec .filter-bar {
-  border: 2px solid black;
-  width: auto;
-  height: 200px;
+  border: 2px solid #B8B8B8;
+  width: 40%;
+  height: 870px;
+}
+
+section.gallery-sec .filter-bar .title-filter {
+  background: #cfcdcd;
+  padding: 1.5em;
+  margin-bottom: 3em;
+}
+
+section.gallery-sec .filter-bar .title-filter h3 {
+  font-size: .8em;
+  text-align: center;
+  margin: 0;
+  color: gray;
+}
+
+section.gallery-sec .filter-bar .filter-content {
+  text-align: left;
+  margin: 4em 1.5em;
+  font-size: .8em;
+}
+
+section.gallery-sec .filter-bar .filter-content p {
+  margin-bottom: 1em;
+  margin-top: 2.5em;
+}
+
+section.gallery-sec .filter-bar .filter-content input {
+  width: 90%;
+  height: 27px;
+  background: #f1f1f1;
+  border: 1.4px solid #c7c7c7;
+}
+
+section.gallery-sec .filter-bar .filter-content ::-webkit-input-placeholder {
+  color: black;
+  font-family: 'Poppins';
+}
+
+section.gallery-sec .filter-bar .filter-content :-ms-input-placeholder {
+  color: black;
+  font-family: 'Poppins';
+}
+
+section.gallery-sec .filter-bar .filter-content ::-ms-input-placeholder {
+  color: black;
+  font-family: 'Poppins';
+}
+
+section.gallery-sec .filter-bar .filter-content ::placeholder {
+  color: black;
+  font-family: 'Poppins';
+}
+
+section.gallery-sec .filter-bar .find-car {
+  text-align: center;
+}
+
+section.gallery-sec .filter-bar .find-car button {
+  background: #131313;
+  font-family: 'Poppins';
+  font-size: .9em;
+  border: none;
+  color: white;
+  padding: .7em 0;
+  width: 70%;
+}
+
+section.gallery-sec .filter-bar .find-car button:hover {
+  cursor: pointer;
 }
 /*# sourceMappingURL=main.css.map */

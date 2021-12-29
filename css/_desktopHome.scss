@@ -95,7 +95,7 @@
     }
     
     section.start-title {
-        background: url(/images/start-title.jpg);
+        background-image: url(/images/image-bg-titlw.svg);
         margin-top: 0em;
         padding-top: 0em;
         width: auto;
@@ -109,7 +109,6 @@
             display: block;
             text-align: left;
             align-content: center;
-            // ho-align:middle;
            }
            div {
             border: 5px solid #5200FF;
@@ -120,7 +119,6 @@
            }
         }
         .cta-group {
-            // display: block;
             align-items: center;
             display: flex;
             justify-content: flex-end;
@@ -150,7 +148,7 @@
     }
     
     section.why-us {
-        background: url(/images/bg-why-us.png);
+        background-image: url(/images/whyUs-bg.svg);
         width: auto;
         height: auto;
         padding: 1em 50px;
