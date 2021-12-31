@@ -90,7 +90,58 @@ section.contact-form {
             font-size: 1em;
             font-family: 'Poppins';
             align-items: center;
+            &:hover {
+                cursor: pointer;
+            }
         }
+    }
+}
+
+section.popup {
+    
+    .inside-cont {
+        position: absolute;
+        top: 450px;     
+        left: 0;
+        right: 0;
+        margin-left: auto; 
+        margin-right: auto;
+        text-align: center;
+        width: 50%;
+        height: 450px;
+        border: 3px solid var(--main-color);
+        border-radius: 20px;
+        background: rgba(110, 47, 244, 0.65);
+        color: white;
+        tbody {
+            display: flex;
+            flex-direction: row;
+            margin: .8em 4em;
+            tr {
+                display: flex;
+                flex-direction: column;
+                text-align: left;
+                th {
+                    white-space: nowrap;
+                    margin: .8em 2em;
+                }
+                td {
+                    margin: .8em 2em;
+                }
+            }
+        }
+        .iconify {
+            margin-top: 1.4em;
+            margin-left: 30em;
+            width: 25px;
+            height: 25px;
+            &:hover {
+                cursor: pointer;
+            }
+        }
+    }
+    .close-popup {
+        display: none;
     }
 }
 

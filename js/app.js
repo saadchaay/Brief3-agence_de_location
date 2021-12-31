@@ -11,7 +11,7 @@ const berline = document.getElementById('berline-cars');
 const type_cars = [compact, utilit, berline, citadine, e_chantier, camion, moto] ;
 let type_title = Array.from(document.getElementsByClassName('types'));
 
-content.innerHTML = type_cars[0].innerHTML ;
+content.innerHTML = compact.innerHTML ;
 
 type_title.map(type_cars => {
     type_cars.addEventListener('click', (ev) => {

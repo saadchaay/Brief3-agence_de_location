@@ -1035,6 +1035,72 @@ section.contact-form .button-sec button {
           align-items: center;
 }
 
+section.contact-form .button-sec button:hover {
+  cursor: pointer;
+}
+
+section.popup .inside-cont {
+  position: absolute;
+  top: 450px;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  width: 50%;
+  height: 450px;
+  border: 3px solid var(--main-color);
+  border-radius: 20px;
+  background: rgba(110, 47, 244, 0.65);
+  color: white;
+}
+
+section.popup .inside-cont tbody {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  margin: .8em 4em;
+}
+
+section.popup .inside-cont tbody tr {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: left;
+}
+
+section.popup .inside-cont tbody tr th {
+  white-space: nowrap;
+  margin: .8em 2em;
+}
+
+section.popup .inside-cont tbody tr td {
+  margin: .8em 2em;
+}
+
+section.popup .inside-cont .iconify {
+  margin-top: 1.4em;
+  margin-left: 30em;
+  width: 25px;
+  height: 25px;
+}
+
+section.popup .inside-cont .iconify:hover {
+  cursor: pointer;
+}
+
+section.popup .close-popup {
+  display: none;
+}
+
 section.location {
   margin-top: 25em;
   text-align: center;
@@ -1398,6 +1464,14 @@ section.content-page .form-book .gearbox-type .content-inside div .moto-cta {
   margin-left: 4.3em;
 }
 
+section.content-page .form-book .gearbox-type .content-inside .chose-gearbox h4 {
+  font-size: 1.2em;
+}
+
+section.content-page .form-book .gearbox-type .content-inside .chose-gearbox img {
+  border: 5px solid white;
+}
+
 section.content-page .form-book .fuel-type .chooces {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1449,5 +1523,16 @@ section.content-page .form-book .get-total button {
   background: var(--main-color);
   color: white;
   padding: .8em 2.5em;
+}
+
+section.content-page .form-book .get-total button:hover {
+  cursor: pointer;
+}
+
+section.content-page .form-book .get-total .result-part {
+  border: 2px solid gray;
+  padding: .8em 3em;
+  font-weight: bold;
+  font-size: 1.2em;
 }
 /*# sourceMappingURL=main.css.map */

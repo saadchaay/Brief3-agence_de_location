@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Booking page</title>
     <link rel="stylesheet" href="css/main.css">
+    <link rel="shortcut icon" href="#" />
 </head>
 <body>
 
@@ -66,36 +67,36 @@
                 <div class="container">
                     <div class="column">
                         <div>
-                            <input type="radio" name="vehicle" id="">
-                            <label for="">Compact</label>
+                            <input type="radio" name="vehicle-type" value="compact-box">
+                            <label class="vehicles-car" for="Compact">Compact</label>
                         </div>
                         <div>
-                            <input type="radio" name="vehicle" id="">
-                            <label for="">Utility</label>
+                            <input type="radio" name="vehicle-type" value="utility-box">
+                            <label class="vehicles-car" for="Utility">Utility</label>
                         </div>
                         <div>
-                            <input type="radio" name="vehicle" id="">
-                            <label for="">Berline</label>
-                        </div>
-                    </div>
-                    <div class="column">
-                        <div>
-                            <input type="radio" name="vehicle" id="">
-                            <label for="">Citadine</label>
-                        </div>
-                        <div>
-                            <input type="radio" name="vehicle" id="">
-                            <label for="">Construction machine</label>
+                            <input type="radio" name="vehicle-type" value="berline-box">
+                            <label class="vehicles-car" for="Berline">Berline</label>
                         </div>
                     </div>
                     <div class="column">
                         <div>
-                            <input type="radio" name="vehicle" id="">
-                            <label for="">Trucks</label>
+                            <input type="radio" name="vehicle-type" value="citadine-box">
+                            <label class="vehicles-car" for="Citadine">Citadine</label>
                         </div>
                         <div>
-                            <input type="radio" name="vehicle" id="">
-                            <label for="">MotoCycle</label>
+                            <input type="radio" name="vehicle-type" value="c-machine-box">
+                            <label class="vehicles-car" for="c-machine">Construction machine</label>
+                        </div>
+                    </div>
+                    <div class="column">
+                        <div>
+                            <input type="radio" name="vehicle-type" value="trucks-box">
+                            <label class="vehicles-car" for="Trucks">Trucks</label>
+                        </div>
+                        <div>
+                            <input type="radio" name="vehicle-type" value="moto-box">
+                            <label class="vehicles-car" for="MotoCycle">MotoCycle</label>
                         </div>
                     </div>
                 </div>
@@ -103,15 +104,15 @@
             <div class="gearbox-type">
                 <h3>Gearbox type:</h3>
                 <div class="content-inside">
-                    <div class="automatic">
+                    <div id="auto_class">
                         <img src="images/auto-cars.svg" alt="">
                         <h4 class="auto-cta">Automatic vehicle</h4>
                     </div>
-                    <div class="manual">
+                    <div id="manual_class">
                         <img src="images/manual-cars.svg" alt="">
                         <h4 class="manual-cta">Manual vehicle</h4>
                     </div>
-                    <div class="moto-cycle">
+                    <div id="moto_class">
                         <img src="images/moto-cycle.svg" alt="">
                         <h4 class="moto-cta">MotoCycle</h4>
                     </div>
@@ -121,29 +122,29 @@
                 <h3>Fuel type:</h3>
                 <div class="chooces">
                     <div>
-                        <input type="radio" name="fuel-type" id="">
+                        <input type="radio" name="fuel-type" id="" value="electric">
                         <label for="electric">Electric</label>
                     </div>
                     <div>
-                        <input type="radio" name="fuel-type" id="">
-                        <label for="electric">Hybrid</label>
+                        <input type="radio" name="fuel-type" id="" value="hybrid">
+                        <label for="hybrid">Hybrid</label>
                     </div>
                     <div>
-                        <input type="radio" name="fuel-type" id="">
-                        <label for="electric">Gasoline</label>
+                        <input type="radio" name="fuel-type" id="" value="gasoline">
+                        <label for="gasoline">Gasoline</label>
                     </div>
                     <div>
-                        <input type="radio" name="fuel-type" id="">
-                        <label for="electric">Diesel</label>
+                        <input type="radio" name="fuel-type" id="" value="diesel">
+                        <label for="diesel">Diesel</label>
                     </div>
                 </div>
             </div>
             <div class="rent-days">
                 <h3>How many days:</h3>
-                <input type="number" name="rent-days" id="">
+                <input type="number" name="rent-days" id="num-days">
             </div>
             <div class="get-total">
-                <button type="submit">Get Total</button>
+                <button type="submit" onclick="displayResult()">Get Total</button>
                 <div id="result"></div>
                 <button type="submit">Book</button>
             </div>
@@ -192,7 +193,7 @@
         </div>
     </footer>
 <script src="https://code.iconify.design/2/2.1.0/iconify.min.js"></script>
-
+<script src="js/book.js"></script>
 
 </body>
 </html>

@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact page</title>
+    <link rel="shortcut icon" href="#" />
     <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
@@ -43,24 +44,45 @@
         <form action="">    
            <div class="form-col1">
                 <label for="first-name">First name*</label> 
-                <input type="text" name="first-name"  placeholder="Enter your first name" required>
+                <input class="input-sec" type="text" name="first-name"  placeholder="Enter your first name" required>
                 <label for="email">Email*</label>
-                <input type="email" name="email" id="" placeholder="Enter your email"  required>
+                <input class="input-sec" type="email" name="email" id="" placeholder="Enter your email"  required>
             </div>        
            <div class="form-col2">
                 <label for="last-name">Last name*</label> 
-                <input type="text" name="last-name" placeholder="Enter your last name" required>
+                <input class="input-sec" type="text" name="last-name" placeholder="Enter your last name" required>
                 <label for="phone">Phone*</label>
-                <input type="number" name="phone" id="" placeholder="Enter your phone" required>
+                <input class="input-sec" type="number" name="phone" id="" placeholder="Enter your phone" required>
             </div> 
             <div class="form-col3">
                 <label for="message">Message*</label>
-                <textarea name="message" id="" cols="30" rows="4" placeholder="Enter your message ..."></textarea>
+                <textarea class="input-sec" name="message" id="" cols="30" rows="4" placeholder="Enter your message ..."></textarea>
             </div>       
         </form>
         <div class="button-sec">
             <div><input type="checkbox" name="subscribe" id=""> <span>Subscribe and Get latest updates and offers by Email</span></div>
-            <button type="submit">Submit</button>
+            <button type="submit" onclick="displayInfo()">Submit</button>
+        </div>
+    </section>
+    <section class="popup" >
+        <div id="popup" class="inside-cont">
+            <span onclick="closePopup()" class="iconify" data-icon="ant-design:close-circle-filled" style="color: white;"></span>
+            <table>
+                <tr>
+                    <th class="tag-form">First Name: </th>
+                    <th class="tag-form">Last Name: </th>
+                    <th class="tag-form">Email: </th>
+                    <th class="tag-form">Phone: </th>
+                    <th class="tag-form">Message: </th>
+                </tr>
+                <tr>
+                    <td class="info-form"></td>
+                    <td class="info-form"></td>
+                    <td class="info-form"></td>
+                    <td class="info-form"></td>
+                    <td class="info-form"></td>
+                </tr>
+            </table>
         </div>
     </section>
     <section class="location">  
@@ -110,6 +132,6 @@
         </div>
     </footer>
     <script src="https://code.iconify.design/2/2.1.0/iconify.min.js"></script>
-
+    <script src="js/contact.js"></script>
 </body>
 </html>
