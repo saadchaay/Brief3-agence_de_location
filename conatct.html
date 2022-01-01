@@ -65,8 +65,12 @@
         </div>
     </section>
     <section class="popup" >
+        <div id="error-elm" class="close-popup">
+            <P>Error, some field is empty!!</P>
+            <button onclick="closePopup()">close</button>
+        </div>
         <div id="popup" class="inside-cont">
-            <span onclick="closePopup()" class="iconify" data-icon="ant-design:close-circle-filled" style="color: white;"></span>
+            <span onclick="closePopup()" class="iconify" data-icon="ant-design:close-circle-filled"></span>
             <table>
                 <tr>
                     <th class="tag-form">First Name: </th>

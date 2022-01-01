@@ -527,7 +527,6 @@
     padding-right: 30px;
   }
   section.start-title {
-    background-image: url(/images/image-bg-titlw.svg);
     margin-top: 0em;
     padding-top: 0em;
     width: auto;
@@ -587,7 +586,6 @@
     color: white;
   }
   section.why-us {
-    background-image: url(/images/whyUs-bg.svg);
     width: auto;
     height: auto;
     padding: 1em 50px;
@@ -1049,10 +1047,10 @@ section.popup .inside-cont {
   text-align: center;
   width: 50%;
   height: 450px;
-  border: 3px solid var(--main-color);
-  border-radius: 20px;
-  background: rgba(110, 47, 244, 0.65);
-  color: white;
+  background: white;
+  color: color;
+  -webkit-filter: drop-shadow(2px 6px 8px rgba(128, 128, 128, 0.6));
+          filter: drop-shadow(2px 6px 8px rgba(128, 128, 128, 0.6));
 }
 
 section.popup .inside-cont tbody {
@@ -1091,6 +1089,7 @@ section.popup .inside-cont .iconify {
   margin-left: 30em;
   width: 25px;
   height: 25px;
+  color: black;
 }
 
 section.popup .inside-cont .iconify:hover {
@@ -1099,6 +1098,26 @@ section.popup .inside-cont .iconify:hover {
 
 section.popup .close-popup {
   display: none;
+}
+
+section.popup .error-element {
+  background: rgba(255, 255, 255, 0.65);
+  position: absolute;
+  top: 450px;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  width: 30%;
+  height: 120px;
+  color: red;
+  -webkit-filter: drop-shadow(2px 6px 8px rgba(128, 128, 128, 0.6));
+          filter: drop-shadow(2px 6px 8px rgba(128, 128, 128, 0.6));
+}
+
+section.popup .error-element p {
+  margin-top: 2em;
 }
 
 section.location {
