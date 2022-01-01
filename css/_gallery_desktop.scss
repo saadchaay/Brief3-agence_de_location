@@ -1,5 +1,4 @@
 section.title-pg {
-    background: url(/images/car-listing-bg.jpg);
     height: 200px;
     h2 {
         margin: 0;
@@ -21,9 +20,9 @@ section.gallery-sec {
             justify-content: space-between;
             li {
                 margin-right: 3em;
-                background: white;
+                background-color: white;
                 padding: .5em 1em;
-                border-bottom: 3px solid var(--main-color);
+                border-bottom: 4px solid var(--main-color);
                 &:hover {
                     cursor: pointer;
                     background: var(--main-color);
@@ -32,6 +31,12 @@ section.gallery-sec {
                     transition: all .5s;
                     z-index: 1;
                 }
+            }
+            .list-cta {
+                background-color: var(--main-color);
+                border-bottom: 4px solid rgb(167, 167, 167);
+                color: white;
+                font-weight: bold;
             }
         }
     }
@@ -128,4 +133,3 @@ section.gallery-sec {
         }
     }
 }
-

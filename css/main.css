@@ -873,7 +873,6 @@
 
 section.title-sec {
   color: white;
-  background: url(/images/young.jpg);
   height: 350px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1130,7 +1129,6 @@ section.location iframe {
 }
 
 section.title-pg {
-  background: url(/images/car-listing-bg.jpg);
   height: 200px;
 }
 
@@ -1167,9 +1165,9 @@ section.gallery-sec .type-cars ul {
 
 section.gallery-sec .type-cars ul li {
   margin-right: 3em;
-  background: white;
+  background-color: white;
   padding: .5em 1em;
-  border-bottom: 3px solid var(--main-color);
+  border-bottom: 4px solid var(--main-color);
 }
 
 section.gallery-sec .type-cars ul li:hover {
@@ -1180,6 +1178,13 @@ section.gallery-sec .type-cars ul li:hover {
   -webkit-transition: all .5s;
   transition: all .5s;
   z-index: 1;
+}
+
+section.gallery-sec .type-cars ul .list-cta {
+  background-color: var(--main-color);
+  border-bottom: 4px solid #a7a7a7;
+  color: white;
+  font-weight: bold;
 }
 
 section.gallery-sec .main-content {
