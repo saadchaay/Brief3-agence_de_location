@@ -41,28 +41,31 @@
 
     <section class="contact-form">
         <h3>Contact form:</h3>
-        <form action="">    
-           <div class="form-col1">
-                <label for="first-name">First name*</label> 
-                <input class="input-sec" type="text" name="first-name"  placeholder="Enter your first name" required>
-                <label for="email">Email*</label>
-                <input class="input-sec" type="email" name="email" id="" placeholder="Enter your email"  required>
-            </div>        
-           <div class="form-col2">
-                <label for="last-name">Last name*</label> 
-                <input class="input-sec" type="text" name="last-name" placeholder="Enter your last name" required>
-                <label for="phone">Phone*</label>
-                <input class="input-sec" type="number" name="phone" id="" placeholder="Enter your phone" required>
-            </div> 
-            <div class="form-col3">
-                <label for="message">Message*</label>
-                <textarea class="input-sec" name="message" id="" cols="30" rows="4" placeholder="Enter your message ..."></textarea>
+        <form action=""> 
+            <div class="form-form">
+                <div class="form-col1">
+                    <label for="first-name">First name*</label> 
+                    <input class="input-sec" type="text" name="first-name"  placeholder="Enter your first name" required>
+                    <label for="email">Email*</label>
+                    <input class="input-sec" type="email" name="email" id="" placeholder="Enter your email"  required>
+                </div>        
+                <div class="form-col2">
+                    <label for="last-name">Last name*</label> 
+                    <input class="input-sec" type="text" name="last-name" placeholder="Enter your last name" required>
+                    <label for="phone">Phone*</label>
+                    <input class="input-sec" type="number" name="phone" id="" placeholder="Enter your phone" required>
+                </div> 
+                <div class="form-col3">
+                    <label for="message">Message*</label>
+                    <textarea class="input-sec" name="message" id="" cols="30" rows="4" placeholder="Enter your message ..." required></textarea>
+                </div>
+            </div>
+            <div class="button-sec">
+                <div><input type="checkbox" name="subscribe" id=""> <span>Subscribe and Get latest updates and offers by Email</span></div>
+                <button type="submit" onclick="displayInfo()">Submit</button>
             </div>       
         </form>
-        <div class="button-sec">
-            <div><input type="checkbox" name="subscribe" id=""> <span>Subscribe and Get latest updates and offers by Email</span></div>
-            <button type="submit" onclick="displayInfo()">Submit</button>
-        </div>
+        
     </section>
     <section class="popup" >
         <div id="error-elm" class="close-popup">

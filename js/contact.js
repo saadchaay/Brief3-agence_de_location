@@ -21,7 +21,7 @@ function displayInfo() {
     }
     else {
         let new_elm = document.getElementById('error-elm');
-        new_elm.className = 'error-element' ;
+        // new_elm.className = 'error-element' ;
     }
     
 }
@@ -31,3 +31,5 @@ function closePopup() {
     new_elm.className = 'close-popup' ;
     popup_sec.className = 'close-popup' ;
 }
+
+window.alert("hello world");

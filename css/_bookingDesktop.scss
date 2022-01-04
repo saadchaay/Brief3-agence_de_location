@@ -123,9 +123,6 @@ section.content-page {
                     }
                     img {
                         border: 5px solid white;
-                        &:hover {
-                            
-                        }
                     }
                 }
             }
@@ -170,11 +167,15 @@ section.content-page {
                 }
             }
             .result-part {
-                border: 2px solid gray;
-                padding: .8em 3em;
+                margin-top: .5em;
                 font-weight: bold;
                 font-size: 1.2em;
+                color: white;
             }
         }
     }
+}
+
+.disabled-input {
+    text-decoration-line: line-through;
 }

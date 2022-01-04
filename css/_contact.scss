@@ -33,8 +33,10 @@ section.contact-form {
         text-align: center;
     }
     form {
-        display: flex;
-        justify-content: space-between;
+        .form-form {
+            display: flex;
+            justify-content: space-between;
+        }
     }
     ::placeholder {
         color: gray;
@@ -73,8 +75,6 @@ section.contact-form {
             justify-content: flex-start;
             align-items: center;
             margin: 0 0;
-            label {
-            }
             span {
                 font-size: .7em;
                 margin-left: .4em;

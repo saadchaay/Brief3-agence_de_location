@@ -123,25 +123,25 @@
                 <div class="chooces">
                     <div>
                         <input type="radio" name="fuel-type" id="" value="electric">
-                        <label for="electric">Electric</label>
+                        <label name="label-fuel" for="electric">Electric</label>
                     </div>
                     <div>
                         <input type="radio" name="fuel-type" id="" value="hybrid">
-                        <label for="hybrid">Hybrid</label>
+                        <label name="label-fuel" for="hybrid">Hybrid</label>
                     </div>
                     <div>
                         <input type="radio" name="fuel-type" id="" value="gasoline">
-                        <label for="gasoline">Gasoline</label>
+                        <label name="label-fuel" for="gasoline">Gasoline</label>
                     </div>
                     <div>
                         <input type="radio" name="fuel-type" id="" value="diesel">
-                        <label for="diesel">Diesel</label>
+                        <label name="label-fuel" for="diesel">Diesel</label>
                     </div>
                 </div>
             </div>
             <div class="rent-days">
                 <h3>How many days:</h3>
-                <input type="number" name="rent-days" id="num-days">
+                <input type="number" name="rent-days" id="num-days" min="1">
             </div>
             <div class="get-total">
                 <button type="submit" onclick="displayResult()">Get Total</button>
