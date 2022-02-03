@@ -12,20 +12,27 @@
 
 <!--    Header      -->
 
-    <header>
-        <div class="call-section">
-            <div class="phone-number">
-                <img src="images/icons/call-us.svg" alt="call us">
-                <p>00 212 615 207 417</p>
-            </div>
-            <h4><a href="">Call Us</a></h4>
+<header>
+    <div class="call-section">
+        <div class="phone-number">
+            <img src="images/icons/call-us.svg" alt="call us">
+            <p>00 212 615 207 417</p>
         </div>
-        <div class="container">
+        <h4><a href="">Call Us</a></h4>
+    </div>
+    <div class="container">
+        <div class="logo-icon">
             <div class="logo">
                 <a href="/"><img src="images/logo.png" alt=""></a>
                 <h2><a href="/"> <span>Rent</span>MeNow</a></h2>
             </div>
-            <nav>
+            <div class="open-icon">
+                <img id='open-nav' class="open-cta" src="./images/icons/open-nav.svg" alt="">
+                <img id='close-nav' class="close-cta" src="./images/icons/close-nav.svg" alt="" >
+            </div>
+        </div>
+        <div id="nav-content" class="close-nav">
+            <nav >
                 <ul>
                     <li><a href="index.html">Home</a></li>
                     <li><a href="gallery.html">Gallery</a></li>
@@ -34,7 +41,8 @@
                 </ul>
             </nav>
         </div>
-    </header>
+    </div>
+</header>
 
     <section class="content-page">
         <div class="top-background">
@@ -44,23 +52,6 @@
             <div class="title-form">
                 <h2>CAR RENTALS FOR ANY KIND OF TRIP</h2>
                 <h4>Compare deals from the biggest car rental companies </h4>
-            </div>
-            <div class="filter-date">
-                <div class="cars-icon">
-                    <img src="images/icons/car-icon.svg" alt="">
-                    <input class="icon-car" type="text" name="pick-location" placeholder="PICK UP LOCATION">
-                </div>
-                <div class="date-inputs">
-                    <div class="date">
-                        <img src="images/icons/date-icon.svg" alt="">
-                        <input class="icon-date" type="text" placeholder="Thu, Dec 30, 10:00">
-                    </div>
-                    <div class="date">
-                        <img src="images/icons/date-icon.svg" alt="">
-                        <input class="icon-date" type="text" placeholder="San, Jan 2, 10:00">
-                    </div>
-                </div>
-                <button type="submit">Search</button>
             </div>
             <div class="vehicles-type">
                 <h3>VEHICLES TYPE: </h3>
@@ -78,8 +69,8 @@
                             <input type="radio" name="vehicle-type" value="berline-box">
                             <label class="vehicles-car" for="Berline">Berlin</label>
                         </div>
-                    </div>
-                    <div class="column">
+                    <!-- </div> -->
+                    <!-- <div class="column"> -->
                         <div>
                             <input type="radio" name="vehicle-type" value="citadine-box">
                             <label class="vehicles-car" for="Citadine">Citadine</label>
@@ -88,8 +79,8 @@
                             <input type="radio" name="vehicle-type" value="c-machine-box">
                             <label class="vehicles-car" for="c-machine">Construction machine</label>
                         </div>
-                    </div>
-                    <div class="column">
+                    <!-- </div>
+                    <div class="column"> -->
                         <div>
                             <input type="radio" name="vehicle-type" value="trucks-box">
                             <label class="vehicles-car" for="Trucks">Trucks</label>
@@ -105,16 +96,16 @@
                 <h3>Gearbox type:</h3>
                 <div class="content-inside">
                     <div id="auto_class">
-                        <img src="images/auto-car.jpg" alt="">
-                        <h4 class="auto-cta">Automatic vehicle</h4>
+                        <h4 class="auto-cta" style="background-image: url('./images/auto-car.jpg'); width: 190px;height: 50px;">
+                            Automatic vehicle</h4>
                     </div>
                     <div id="manual_class">
-                        <img src="images/manual-car.jpg" alt="">
-                        <h4 class="manual-cta">Manual vehicle</h4>
+                        <h4 class="manual-cta" style="background-image: url('./images/manual-car.jpg'); width: 190px;height: 50px;">
+                            Manual vehicle</h4>
                     </div>
                     <div id="moto_class">
-                        <img src="images/motor-cycle.jpg" alt="">
-                        <h4 class="moto-cta">MotoCycle</h4>
+                        <h4 class="moto-cta" style="background-image: url('./images/motor-cycle.jpg'); width: 190px;height: 50px;">
+                            MotoCycle</h4>
                     </div>
                 </div>
             </div>
@@ -145,7 +136,7 @@
             </div>
             <div class="get-total">
                 <button type="submit" onclick="displayResult()">Get Total</button>
-                <div id="result"></div>
+                <div id="result" class="result-part"></div>
                 <button type="submit">Book</button>
             </div>
         </div>
@@ -154,46 +145,47 @@
 <!--     Footer    -->
 
     <footer>
-        <div class="logo">
-            <img src="images/logo-white.png" alt="">
-            <h2><span>Rent</span>MeNow</h2>
+        <div class="head-footer">
+            <div class="logo">
+                <img src="images/logo-white.png" alt="">
+                <h2><span>Rent</span>MeNow</h2>
+            </div>
+            <div class="social-media">
+                <span class="iconify" data-icon="ant-design:facebook-filled" style="color: white;"></span>
+                <span class="iconify insta" data-icon="ant-design:instagram-filled" style="color: white;"></span>
+                <span class="iconify twt" data-icon="ant-design:twitter-square-filled" style="color: white;"></span>
+            </div>    
         </div>
         <div class="cnt-footer">
-            <div class="info-sec">
+            <div>
                 <h5>INFORMATION</h5>
-                <ul>
-                    <li><a href="about_us.html">About us</a></li>
-                    <li><a href="#">Our services</a></li>
-                    <li><a href="#">Our agency</a></li>
-                </ul>
+                <div>
+                    <p><a href="about_us.html">About us</a></p>
+                    <p><a href="#">Our services</a></p>
+                    <p><a href="#">Our agency</a></p>
+                </div>
             </div>
-            <div class="support-sec">
+            <div>
                 <h5>CUSTOMER SUPPORT</h5>
-                <ul>
-                    <li><a href="contact.html">Contact us</a></li>
-                    <li><a href="#">Booking tips</a></li>
-                    <li><a href="#">FAQ</a></li>
-                </ul>
+                <div>
+                    <p><a href="contact.html">Contact us</a></p>
+                    <p><a href="#">Booking tips</a></p>
+                    <p><a href="#">FAQ</a></p>
+                </div>
             </div>
-            <div class="about-sec">
+            <div>
                 <h5>HAVE A QUESTION ?</h5>
-                <ul>
-                    <li><a href="#">Phone: <span> + 212 615 207 417 </span></a></li>
-                    <li><a href="#">Email: <span> contact@rentmenow.ma </span></a></li>
-                    <li><a href="#">Adresse: 125 Big fella St. Road, New York, Hi 5654775</a></li>
-                </ul>
+                <div>
+                    <p><a href="#">Phone: <span> + 212 615 207 417 </span></a></p>
+                    <p><a href="#">Email: <span> contact@rentmenow.ma </span></a></p>
+                    <p><a href="#">Adresse: 125 Big fella St. Road, New York, Hi 5654775</a></p>
+                </div>
             </div>
         </div>
-        <div>
-            <ul class="social-media">
-                <li><span class="iconify" data-icon="ant-design:facebook-filled" style="color: white;"></span></li>
-                <li><span class="iconify insta" data-icon="ant-design:instagram-filled" style="color: white;"></span></li>
-                <li><span class="iconify twt" data-icon="ant-design:twitter-square-filled" style="color: white;"></span></li>
-            </ul>
-        </div>
-    </footer>
-<script src="https://code.iconify.design/2/2.1.0/iconify.min.js"></script>
-<script src="js/book.js"></script>
+    </footer>    
 
+    <script src="https://code.iconify.design/2/2.1.0/iconify.min.js"></script>
+    <script src="js/book.js"></script>
+    <script src="js/nav.js"></script>
 </body>
 </html>

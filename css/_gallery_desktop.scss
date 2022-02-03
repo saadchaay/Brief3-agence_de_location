@@ -1,90 +1,124 @@
-//Desktop
+@import "./mixins" ;
 
-@media only screen and (min-width: 375px) and (max-width:500px) {
+@media screen and(min-width: 350px) and (max-width: 690px){
     section.title-pg {
-        height: 100px;
+        height: 200px;
         h2 {
             margin: 0;
-            padding-top: .3em;
+            padding-top: 2.3em;
             display: flex;
             justify-content: flex-start;
             color: white;
             font-size: 2.3em;
         }
     }
-
     section.gallery-sec {
         margin: 2em 30px;
         .type-cars {
-            margin-bottom: 2em;
-            ul {
-                font-size: .9em;
-                display: flex;
-                justify-content: space-between;
-                li {
-                    margin-right: 3em;
-                    background-color: white;
-                    padding: .5em 1em;
-                    border-bottom: 4px solid var(--main-color);
-                    &:hover {
-                        cursor: pointer;
-                        background: var(--main-color);
-                        border-bottom: 3px solid white ;
-                        color: white;
-                        transition: all .5s;
-                        z-index: 1;
-                    }
-                }
-                .list-cta {
-                    background-color: var(--main-color);
-                    border-bottom: 4px solid rgb(167, 167, 167);
-                    color: white;
+            display: none;
+        }
+        .cta-list {
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            margin: 1em 0;
+            button {
+                font-size: 1em;
+                background: var(--main-color);
+                color: white;
+                border: none;
+                padding: .7em 1em;
+                border-radius: 10px;
+                &:hover {
                     font-weight: bold;
+                    cursor: pointer;
                 }
             }
         }
+        .filter-bar {
+            display: none;
+        }
         .main-content {
+            @include main-content(column,column,100%,.6em);
+        }
+    }
+    .display-list {
+        @include type-cars-name(column);
+        li {
+            margin: .3em 0;
+            font-size: .85em;
+        }
+    }
+    .open-list {
+        display: block;
+        text-align: right;
+        img {
+            width: 25px;
+            height: 25px;
+        }
+        &:hover {
+            cursor: pointer;
+        }
+    }
+}
+
+
+@media screen and(min-width: 691px) and (max-width: 950px){
+    section.title-pg {
+        height: 200px;
+        h2 {
+            margin: 0;
+            padding-top: 2.3em;
             display: flex;
-            justify-content: center;
-            margin-top: 0;
-            .disabled-sec {
-                display: none;
-            }
-            .cars-bar {
-                display: flex;
-                flex-direction: column;
-                width: 170%;
-                .car-desc {
-                    display:flex;
-                    justify-content: center;
-                    flex-direction: column;
-                    border: 2px solid #B8B8B8;
-                    margin: 0 .5em 1em 0;
-                    .img-car {
-                        width: 100%;
-                        height: auto;
-                    }
-                    .text-desc {
-                        margin: 0 1em;
-                        margin-top: -1em;
-                        p {
-                            font-size: .9em;
-                        }
-                        h6 {
-                            margin: 0 0 .5em 2em;
-                            color: var(--main-color);
-                        }
-                        button {
-                            border: none;
-                            border-radius: 5px;
-                            padding: .5em 1em;
-                            background: var(--main-color);
-                            margin-bottom: 1em;
-                            font-weight: bold;
-                        }
-                    }
-                }
-            }
+            justify-content: flex-start;
+            color: white;
+            font-size: 2.3em;
+        }
+    }
+    section.gallery-sec {
+        margin: 2em 30px;
+        .type-cars {
+            @include type-cars-name(row);
+            font-size: .8em;
+        }
+        .cta-list {
+            display: none;
+        }
+        .main-content {
+            @include main-content(column,row,220px,.7em);
+        }
+        .close-cta {
+            display: none;
+        }
+        .filter-bar {
+            display: none;
+        }
+    }
+}
+
+
+@media screen and(min-width: 951px) and (max-width: 1920px){
+    section.title-pg {
+        height: 200px;
+        h2 {
+            margin: 0;
+            padding-top: 2.3em;
+            display: flex;
+            justify-content: flex-start;
+            color: white;
+            font-size: 2.3em;
+        }
+    }
+    section.gallery-sec {
+        margin: 2em 30px;
+        .type-cars {
+            @include type-cars-name(row);
+        }
+        .cta-list {
+            display: none;
+        }
+        .main-content {
+            @include main-content(column,row,350px,1em);
         }
         .filter-bar {
             display: none;
@@ -137,148 +171,8 @@
                 }
             }
         }
-    }
-    
-}
-
-
-
-@media screen and(min-width: 1024px){
-    section.title-pg {
-        height: 200px;
-        h2 {
-            margin: 0;
-            padding-top: 2.3em;
-            display: flex;
-            justify-content: flex-start;
-            color: white;
-            font-size: 2.3em;
-        }
-    }
-    
-    section.gallery-sec {
-        margin: 2em 30px;
-        .type-cars {
-            margin-bottom: 2em;
-            ul {
-                font-size: .9em;
-                display: flex;
-                justify-content: space-between;
-                li {
-                    margin-right: 3em;
-                    background-color: white;
-                    padding: .5em 1em;
-                    border-bottom: 4px solid var(--main-color);
-                    &:hover {
-                        cursor: pointer;
-                        background: var(--main-color);
-                        border-bottom: 3px solid white ;
-                        color: white;
-                        transition: all .5s;
-                        z-index: 1;
-                    }
-                }
-                .list-cta {
-                    background-color: var(--main-color);
-                    border-bottom: 4px solid rgb(167, 167, 167);
-                    color: white;
-                    font-weight: bold;
-                }
-            }
-        }
-        .main-content {
-            display: flex;
-            justify-content: center;
-            margin-top: 0;
-            .disabled-sec {
-                display: none;
-            }
-            .cars-bar {
-                display: flex;
-                flex-direction: column;
-                width: 170%;
-                .car-desc {
-                    display:flex;
-                    justify-content: center;
-                    border: 2px solid #B8B8B8;
-                    margin: 0 .5em 1em 0;
-                    .img-car {
-                        width: 350px;
-                        height: auto;
-                    }
-                    .text-desc {
-                        margin: 0 1em;
-                        margin-top: -1em;
-                        p {
-                            font-size: .9em;
-                        }
-                        h6 {
-                            margin: 0 0 .5em 2em;
-                            color: var(--main-color);
-                        }
-                        button {
-                            border: none;
-                            border-radius: 5px;
-                            padding: .5em 1em;
-                            background: var(--main-color);
-                            margin-bottom: 1em;
-                            font-weight: bold;
-                        }
-                    }
-                }
-            }
-        }
-        .filter-bar {
-            border: 2px solid #B8B8B8;
-            width: 40%;
-            height: 870px;
-            .title-filter {
-                background: #cfcdcd;
-                padding: 1.5em;
-                margin-bottom: 3em;
-                h3 {
-                    font-size: .8em;
-                    text-align: center;
-                    margin: 0;
-                    color: gray;
-                }
-            }
-            .filter-content {
-                text-align: left;
-                margin: 4em 1.5em;
-                font-size: .8em;
-                p {
-                    margin-bottom: 1em;
-                    margin-top: 2.5em;
-                }
-                input {
-                    width: 90%;
-                    height: 27px;
-                    background: #f1f1f1;
-                    border: 1.4px solid #c7c7c7;
-                }
-                ::placeholder {
-                    color: black;
-                    font-family: 'Poppins';
-                }
-            }
-            .find-car {
-                text-align: center;
-                button {
-                    background: rgb(19, 19, 19);
-                    font-family: 'Poppins';
-                    font-size: .9em;
-                    border: none;
-                    color: white;
-                    padding: .7em 0;
-                    width: 70%;
-                    &:hover {
-                        cursor: pointer;
-                    }
-                }
-            }
+        .close-cta {
+            display: none;
         }
     }
 }
-
-//Phone portrait and lanscape

@@ -1,0 +1,178 @@
+
+
+// mobile ...
+@media screen and(min-width: 350px) and (max-width: 690px){
+    footer {
+        background: var(--main-color);
+        border: 20px solid var(--main-color);
+        width: auto;
+        height: auto;
+        margin-top: 3em;
+        .head-footer {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            flex-direction: row;
+            .logo {
+                display: flex;
+                align-items: center;
+                img {
+                    width: 35px;
+                    height: 35px;
+                }
+                h2 {
+                    font-size: 1em;
+                    span {
+                        color: white;
+                    }
+                }
+            }
+        }
+        .cnt-footer {
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            div {
+                display: flex;
+                justify-content: center;
+                flex-direction: column;
+                h5 {
+                    font-size: .9em;
+                }
+                p {
+                    font-size: .8em;
+                    margin: 0;
+                    span {
+                        text-decoration-line: underline;
+                    }
+                }
+            }
+        }
+        .social-media {
+            display: flex;
+            justify-content: center;
+            .iconify {
+                width: 35px;
+                height: 35px;
+            }
+        }
+    }
+}
+
+// medium desktop ...
+@media screen and(min-width: 691px) and (max-width: 950px){
+    footer {
+        background: var(--main-color);
+        border: 20px solid var(--main-color);
+        width: auto;
+        height: 230px;
+        margin-top: 5em;
+        .head-footer {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            .logo {
+                display: flex;
+                justify-content: flex-start;
+                align-items: center;
+                img {
+                    width: 40px;
+                    height: 40px;
+                }
+                h2 {
+                    span {
+                        color: white;
+                    }
+                }
+            }
+        }
+        .cnt-footer {
+            display: flex;
+            justify-content: space-around;
+            text-align: center;
+            div {
+                display: flex;
+                justify-content: center;
+                flex-direction: column;
+                flex: 1;
+                h5 {
+                    font-size: .9em;
+                }
+                p {
+                    font-size: .8em;
+                    margin: 0;
+                    span {
+                        text-decoration-line: underline;
+                    }
+                }
+            }
+        }
+        .social-media {
+            display: flex;
+            justify-content: center;
+            .iconify {
+                width: 40px;
+                height: 40px;
+            }
+        }
+    }
+}
+
+// large Desktop
+@media screen and(min-width: 951px) and (max-width: 1920px){
+    footer {
+        background: var(--main-color);
+        border: 20px solid var(--main-color);
+        width: auto;
+        height: 230px;
+        margin-top: 5em;
+        .head-footer {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            .logo {
+                display: flex;
+                justify-content: flex-start;
+                align-items: center;
+                img {
+                    width: 40px;
+                    height: 40px;
+                }
+                h2 {
+                    span {
+                        color: white;
+                    }
+                }
+            }
+        }
+        .cnt-footer {
+            display: flex;
+            justify-content: space-around;
+            text-align: center;
+            div {
+                flex: 1;
+                display: flex;
+                justify-content: center;
+                flex-direction: column;
+                h5 {
+                    font-size: .9em;
+                }
+                p {
+                    font-size: .8em;
+                    margin: 0;
+                    span {
+                        text-decoration-line: underline;
+                    }
+                }
+            }
+        }
+        .social-media {
+            display: flex;
+            justify-content: center;
+            .iconify {
+                width: 40px;
+                height: 40px;
+            }
+        }
+    }
+}

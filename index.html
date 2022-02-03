@@ -18,18 +18,26 @@
             <h4><a href="">Call Us</a></h4>
         </div>
         <div class="container">
-            <div class="logo">
-                <a href="/"><img src="images/logo.png" alt=""></a>
-                <h2><a href="/"> <span>Rent</span>MeNow</a></h2>
+            <div class="logo-icon">
+                <div class="logo">
+                    <a href="/"><img src="images/logo.png" alt=""></a>
+                    <h2><a href="/"> <span>Rent</span>MeNow</a></h2>
+                </div>
+                <div class="open-icon">
+                    <img id='open-nav' class="open-cta" src="./images/icons/open-nav.svg" alt="">
+                    <img id='close-nav' class="close-cta" src="./images/icons/close-nav.svg" alt="" >
+                </div>
             </div>
-            <nav>
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="gallery.html">Gallery</a></li>
-                    <li><a href="booking.html">Booking</a></li>
-                    <li><a href="conatct.html">Contact</a></li>
-                </ul>
-            </nav>
+            <div id="nav-content" class="close-nav">
+                <nav >
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                        <li><a href="booking.html">Booking</a></li>
+                        <li><a href="conatct.html">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
         </div>
     </header>
 
@@ -62,33 +70,55 @@
     
     <section class="service-cts">
         <h1>Why People Like Us?</h1>
-        <ul class="content-sr">
-            <li>
+        <div class="content-sr">
+            <div>
                 <h4><img src="images/icons/icon-best-price.svg" alt="">   Best Price Guarantee</h4>
                 <p>Duis placerat tempus odio vel pretium. Vestibulum mattis viverra justo vel consequat.</p>
-            </li>
-            <li>
+            </div>
+            <div>
                 <h4><img src="images/icons/icon-no-fees.svg" alt="">   No Cancellation Fees</h4>
                 <p>Duis placerat tempus odio vel pretium. Vestibulum mattis viverra justo vel consequat.</p>
-            </li>
-            <li>
+            </div>
+            <div>
                 <h4><img src="images/icons/icon-quality.svg" alt="">   Best Quality Cars</h4>
                 <p>Duis placerat tempus odio vel pretium. Vestibulum mattis viverra justo vel consequat.</p>
-            </li>
-            <li>
+            </div>
+            <div>
                 <h4><img src="images/icons/icon-timing.svg" alt="">   Reservation Anytime</h4>
                 <p>Duis placerat tempus odio vel pretium. Vestibulum mattis viverra justo vel consequat.</p>
-            </li>
-        </ul>
+            </div>
+        </div>
     </section>
 
     <section class="offer-week">
-        <h1>Offer for this week</h1>
+        <h1>Offer for this week(<p><span>13.99€</span>Rent per day</p>)</h1>
         <div class="content-inside">
             <img src="images/img-offer.png" alt="">
             <div>
-                <h2><span>13.99€ </span>Rent per day</h2>
-                <div class="detail-offer">
+                <table class="detail-offer">
+                    <tr>
+                        <th>Model:</th>
+                        <td>Ford</td>
+                    </tr>
+                    <tr>
+                        <th>Doors:</th>
+                        <td>4</td>
+                    </tr>
+                    <tr>
+                        <th>Seats:</th> 
+                        <td>5</td>
+                    </tr>
+                    <tr>
+                        <th>Luggage:</th>
+                        <td>2 Suitcases / 2 Bags</td>
+                    </tr>
+                    <tr>
+                        <th>Transmission:</th>
+                        <td>Automatic</td>
+                    </tr>
+                </table>
+                <!-- <div class="detail-offer">
+
                     <div class="categ-offer">
                         <h3>Model:</h3>
                         <p>Ford</p>
@@ -109,7 +139,7 @@
                         <h3>Transmission:</h3>
                         <p>Automatic</p>
                     </div>
-                </div>
+                </div> -->
                 <button><img src="images/icons/icon-book.svg" alt=""><a href="booking.html">Book Now</a> </button>
             </div>
         </div>
@@ -161,44 +191,46 @@
     </section>
 
     <footer>
-        <div class="logo">
-            <img src="images/logo-white.png" alt="">
-            <h2><span>Rent</span>MeNow</h2>
+        <div class="head-footer">
+            <div class="logo">
+                <img src="images/logo-white.png" alt="">
+                <h2><span>Rent</span>MeNow</h2>
+            </div>
+            <div class="social-media">
+                <span class="iconify" data-icon="ant-design:facebook-filled" style="color: white;"></span>
+                <span class="iconify insta" data-icon="ant-design:instagram-filled" style="color: white;"></span>
+                <span class="iconify twt" data-icon="ant-design:twitter-square-filled" style="color: white;"></span>
+            </div>    
         </div>
         <div class="cnt-footer">
-            <div class="info-sec">
+            <div>
                 <h5>INFORMATION</h5>
-                <ul>
-                    <li><a href="about_us.html">About us</a></li>
-                    <li><a href="#">Our services</a></li>
-                    <li><a href="#">Our agency</a></li>
-                </ul>
+                <div>
+                    <p><a href="about_us.html">About us</a></p>
+                    <p><a href="#">Our services</a></p>
+                    <p><a href="#">Our agency</a></p>
+                </div>
             </div>
-            <div class="support-sec">
+            <div>
                 <h5>CUSTOMER SUPPORT</h5>
-                <ul>
-                    <li><a href="contact.html">Contact us</a></li>
-                    <li><a href="#">Booking tips</a></li>
-                    <li><a href="#">FAQ</a></li>
-                </ul>
+                <div>
+                    <p><a href="contact.html">Contact us</a></p>
+                    <p><a href="#">Booking tips</a></p>
+                    <p><a href="#">FAQ</a></p>
+                </div>
             </div>
-            <div class="about-sec">
+            <div>
                 <h5>HAVE A QUESTION ?</h5>
-                <ul>
-                    <li><a href="#">Phone: <span> + 212 615 207 417 </span></a></li>
-                    <li><a href="#">Email: <span> contact@rentmenow.ma </span></a></li>
-                    <li><a href="#">Adresse: 125 Big fella St. Road, New York, Hi 5654775</a></li>
-                </ul>
+                <div>
+                    <p><a href="#">Phone: <span> + 212 615 207 417 </span></a></p>
+                    <p><a href="#">Email: <span> contact@rentmenow.ma </span></a></p>
+                    <p><a href="#">Adresse: 125 Big fella St. Road, New York, Hi 5654775</a></p>
+                </div>
             </div>
-        </div>
-        <div>
-            <ul class="social-media">
-                <li><span class="iconify" data-icon="ant-design:facebook-filled" style="color: white;"></span></li>
-                <li><span class="iconify insta" data-icon="ant-design:instagram-filled" style="color: white;"></span></li>
-                <li><span class="iconify twt" data-icon="ant-design:twitter-square-filled" style="color: white;"></span></li>
-            </ul>
         </div>
     </footer>
+    
     <script src="https://code.iconify.design/2/2.1.0/iconify.min.js"></script>
+    <script src="js/nav.js"></script>
 </body>
 </html>

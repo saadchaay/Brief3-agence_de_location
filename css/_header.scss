@@ -1,0 +1,313 @@
+// mobile ...
+@media screen and(min-width: 350px) and (max-width: 690px){
+    :root {
+        --main-color: #6E2FF4;
+      }
+    body {
+        background: #f1f1f1;
+        font-family: 'Poppins';
+        margin: 0em 0px;
+        letter-spacing: 0.08em;
+    }
+    
+    .call-section {
+        background: var(--main-color);
+        margin: 0px 0px;
+        color: white;
+        display: flex;
+        justify-content: end;
+        padding: 0em 30px;
+        height: 37px;
+        padding-left: 20px;
+        padding-right: 20px;
+        .phone-number {
+            display: flex;
+            margin: auto;
+            margin-top: 0em;
+            img {
+            margin: .5em 0em;
+            width: 20px;
+            height: 20px;
+            }
+            p {
+                font-size: .7em;
+                margin-left: 1em;
+            }
+        }
+        h4 {
+            font-size: .8em;
+            margin-top: .6em;
+            margin-right: 5em;
+        }
+    }
+    .close-nav {
+        display: none;
+    }
+    .close-cta {
+        display: none;
+    }
+    .container {
+        width: 100%;
+        background: white;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        filter: drop-shadow(2px 6px 8px rgba(128, 128, 128, 0.7));
+        a {
+            color: black;
+            font-size: 1.2em;
+        }  
+        .navbar-style {
+            display: flex;
+            justify-content: flex-start;
+            nav {
+                font-size: .6em;
+                ul {
+                    display: flex;
+                    padding-left: 0;
+                    li{
+                        margin: 0 2em;
+                        &:hover {
+                            font-weight: bold;
+                        }
+                    }
+                }
+            }
+        }
+        .logo-icon {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            .logo {
+                margin-left: 1em;
+                display: flex;
+                justify-content: flex-start;
+                align-items: center;
+                img {
+                    width: 28px;
+                    height: 28px;
+                    margin-top: .3em;
+                }
+                h2 {
+                    font-size: .8em;
+                    span {
+                        color: var(--main-color);
+                    }
+                }
+            }
+            .open-icon {
+                margin-right: 1em;
+                img {
+                    width: 30px;
+                    height: 30px;
+                }
+                &:hover {
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+}
+
+// medium desktop ...
+@media screen and(min-width: 691px) and (max-width: 950px){
+    :root {
+        --main-color: #6E2FF4;
+      }
+    body {
+        background: #f1f1f1;
+        font-family: 'Poppins';
+        margin: 0em 0px;
+        letter-spacing: 0.08em;
+    }
+    .call-section {
+        background: var(--main-color);
+        margin: 0px 0px;
+        color: white;
+        display: flex;
+        justify-content: end;
+        padding: 0em 30px;
+        height: 49px;
+        padding-left: 30px;
+        padding-right: 30px;
+        .phone-number {
+            display: flex;
+            margin: auto;
+            margin-top: 0em;
+            img {
+            margin: .5em 0em;
+            width: 30px;
+            height: 30px;
+            }
+            p {
+                font-size: 1em;
+                margin-left: 1.5em;
+            }
+        }
+        h4 {
+            font-size: 1em;
+            margin-top: .7em;
+            margin-right: 5em;
+        }
+    }
+    .container {
+        background: white;
+        display: flex;
+        align-items: center;
+        place-content: space-between;
+        filter: drop-shadow(2px 6px 8px rgba(128, 128, 128, 0.7));
+        a {
+            color: black;
+            font-size: 1.2em;
+        }
+        .logo-icon {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            .logo {
+                margin-left: 1em;
+                display: flex;
+                align-items: center;
+                img {
+                    width: 35px;
+                    height: 35px;
+                }
+                h2 {
+                    font-size: 1em;
+                    span {
+                        color: var(--main-color);
+                    }
+                }
+            }
+            .open-icon {
+                display: none;
+            }
+        }
+        nav {
+            ul {
+                display: flex;
+                place-content: space-between;
+                li{
+                    margin: 0 1em;
+                    font-size: .8em;
+                    &:hover {
+                        font-weight: bold;
+                    }
+                }
+            }
+        }
+    }
+}
+
+// large Desktop
+@media screen and(min-width: 951px) and (max-width: 1920px){
+    :root {
+        --main-color: #6E2FF4;
+      }
+    body {
+        background: #f1f1f1;
+        font-family: 'Poppins';
+        margin: 0em 0px;
+        letter-spacing: 0.08em;
+    }
+    
+    .call-section {
+        background: var(--main-color);
+        margin: 0px 0px;
+        color: white;
+        display: flex;
+        justify-content: end;
+        padding: 0em 30px;
+        height: 49px;
+        padding-left: 30px;
+        padding-right: 30px;
+        .phone-number {
+            display: flex;
+            margin: auto;
+            margin-top: 0em;
+            img {
+            margin: .5em 0em;
+            width: 30px;
+            height: 30px;
+            }
+            p {
+                font-size: 1em;
+                margin-left: 1.5em;
+            }
+        }
+        h4 {
+            font-size: 1em;
+            margin-top: .7em;
+            margin-right: 5em;
+        }
+    }
+    
+    a {
+        text-decoration: none;
+        color: white;
+    }
+    
+    ul {
+        list-style: none;
+    }
+    .container {
+        padding-left: 30px;
+        padding-right: 30px;
+        background: white;
+        display: flex;
+        place-content: space-between;
+        margin-bottom: 0em;
+        filter: drop-shadow(2px 6px 8px rgba(128, 128, 128, 0.7));
+        a {
+            color: black;
+            font-size: 1.2em;
+        }
+        .logo-icon {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            .logo {
+                margin-left: 1em;
+                display: flex;
+                align-items: center;
+                img {
+                    width: 40px;
+                    height: 40px;
+                }
+                h2 {
+                    font-size: 1.3em;
+                    span {
+                        color: var(--main-color);
+                    }
+                }
+            }
+            .open-icon {
+                display: none;
+            }
+        }
+        nav {
+            ul {
+                display: flex;
+                place-content: space-between;
+                li{
+                    margin: 0 1.5em;
+                    &:hover {
+                        font-weight: bold;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+a {
+    text-decoration: none;
+    color: white;
+}
+ul {
+    list-style: none;
+}

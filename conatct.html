@@ -18,127 +18,145 @@
             <h4><a href="">Call Us</a></h4>
         </div>
         <div class="container">
-            <div class="logo">
-                <a href="/"> <img src="images/logo.png" alt=""></a>
-                <h2><a href="/"><span>Rent</span>MeNow </a></h2>
+            <div class="logo-icon">
+                <div class="logo">
+                    <a href="/"><img src="images/logo.png" alt=""></a>
+                    <h2><a href="/"> <span>Rent</span>MeNow</a></h2>
+                </div>
+                <div class="open-icon">
+                    <img id='open-nav' class="open-cta" src="./images/icons/open-nav.svg" alt="">
+                    <img id='close-nav' class="close-cta" src="./images/icons/close-nav.svg" alt="" >
+                </div>
             </div>
-            <nav>
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="gallery.html">Gallery</a></li>
-                    <li><a href="booking.html">Booking</a></li>
-                    <li><a href="conatct.html">Contact</a></li>
-                </ul>
-            </nav>
+            <div id="nav-content" class="close-nav">
+                <nav >
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                        <li><a href="booking.html">Booking</a></li>
+                        <li><a href="conatct.html">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
         </div>
     </header>
 
     <section class="title-sec" style="background-image: url(./images/young.jpg);">
-        <span class="iconify" data-icon="grommet-icons:contact" style="color: white;"></span>
-        <h1>Contact Us</h1>
+        <div>
+            <span class="iconify" data-icon="grommet-icons:contact" style="color: white;"></span>
+            <h1>Contact Us</h1>
+        </div>
         <p>let's have a discussion</p>
     </section>
 
-    <section class="contact-form">
-        <h3>Contact form:</h3>
-        <form action=""> 
-            <div class="form-form">
-                <div class="form-col1">
-                    <label for="first-name">First name*</label> 
-                    <input class="input-sec" type="text" name="first-name"  placeholder="Enter your first name" required>
-                    <label for="email">Email*</label>
-                    <input class="input-sec" type="email" name="email" id="" placeholder="Enter your email"  required>
-                </div>        
-                <div class="form-col2">
-                    <label for="last-name">Last name*</label> 
-                    <input class="input-sec" type="text" name="last-name" placeholder="Enter your last name" required>
-                    <label for="phone">Phone*</label>
-                    <input class="input-sec" type="number" name="phone" id="" placeholder="Enter your phone" required>
-                </div> 
-                <div class="form-col3">
-                    <label for="message">Message*</label>
-                    <textarea class="input-sec" name="message" id="" cols="30" rows="4" placeholder="Enter your message ..." required></textarea>
+    <section class="body">
+        <div class="contact-form">
+            <h3>Contact form:</h3>
+            <form action="" id="form-msg"> 
+                <div class="form-form">
+                        <div>
+                            <input class="input-sec" type="text" name="firstName"  placeholder="First name*" required>
+                            <small class="small-cls"></small>
+                            <input class="input-sec" type="text" name="last-name" placeholder="Last name*" required>  
+                            <small class="small-cls"></small> 
+                        </div>
+                        <div>
+                            <input class="input-sec" type="email" name="email" id="" placeholder="Email*"  required>
+                            <small class="small-cls"></small>
+                            <input class="input-sec" type="number" name="phone" id="" placeholder="Phone*" required>
+                            <small class="small-cls"></small>
+                        </div>
+                    
+                        <div>
+                            <textarea class="input-sec" name="message" id="" placeholder="Message ..." required></textarea>
+                            <small class="small-cls"></small>
+                        </div>
                 </div>
-            </div>
-            <div class="button-sec">
-                <div><input type="checkbox" name="subscribe" id=""> <span>Subscribe and Get latest updates and offers by Email</span></div>
-                <button type="submit" onclick="displayInfo()">Submit</button>
-            </div>       
-        </form>
-        
-    </section>
-    <section class="popup" >
-        <div id="error-elm" class="close-popup">
-            <P>Error, some field is empty!!</P>
-            <button onclick="closePopup()">close</button>
+                <div class="button-sec">
+                    <div><input type="checkbox" name="subscribe"> <span>Subscribe and Get latest updates and offers by Email.</span></div>
+                    <button type="submit" onclick="displayInfo(event)">Submit</button>
+                </div>       
+            </form>
+            
         </div>
-        <div id="popup" class="inside-cont">
-            <span onclick="closePopup()" class="iconify" data-icon="ant-design:close-circle-filled"></span>
+        <div class="localisation">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d387193.3060697618!2d-74.25987505169778!3d40.69714939619154!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c24fa5d33f083b%3A0xc80b8f06e177fe62!2sNew%20York%2C%20NY%2C%20USA!5e0!3m2!1sen!2sma!4v1640335200334!5m2!1sen!2sma" allowfullscreen="" loading="lazy"></iframe>          
+        </div>
+    </section>
+     <section id="popup" class="Form_info-disabled" >
+        <div  class="inside-cont">
+            <div onclick="closePopup()">
+                <span class="iconify" data-icon="ant-design:close-circle-filled"></span>
+            </div>
             <table>
                 <tr>
                     <th class="tag-form">First Name: </th>
-                    <th class="tag-form">Last Name: </th>
-                    <th class="tag-form">Email: </th>
-                    <th class="tag-form">Phone: </th>
-                    <th class="tag-form">Message: </th>
+                    <td class="info-form"></td>
                 </tr>
                 <tr>
+                    <th class="tag-form">Last Name: </th>
                     <td class="info-form"></td>
+                </tr>
+                <tr>
+                    <th class="tag-form">Email: </th>
                     <td class="info-form"></td>
+                </tr>
+                <tr>
+                    <th class="tag-form">Phone: </th>
                     <td class="info-form"></td>
-                    <td class="info-form"></td>
+                </tr>
+                <tr>
+                    <th class="tag-form">Message: </th>
                     <td class="info-form"></td>
                 </tr>
             </table>
         </div>
     </section>
-    <section class="location">  
-        <div>
-             <h3>Our location:</h3>
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d387193.3060697618!2d-74.25987505169778!3d40.69714939619154!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c24fa5d33f083b%3A0xc80b8f06e177fe62!2sNew%20York%2C%20NY%2C%20USA!5e0!3m2!1sen!2sma!4v1640335200334!5m2!1sen!2sma" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>          
-        </div>
-    </section>
-    
+    <div>
+        
+    </div>
     <footer>
-        <div class="logo">
-            <img src="images/logo-white.png" alt="">
-            <h2><span>Rent</span>MeNow</h2>
+        <div class="head-footer">
+            <div class="logo">
+                <img src="images/logo-white.png" alt="">
+                <h2><span>Rent</span>MeNow</h2>
+            </div>
+            <div class="social-media">
+                <span class="iconify" data-icon="ant-design:facebook-filled" style="color: white;"></span>
+                <span class="iconify insta" data-icon="ant-design:instagram-filled" style="color: white;"></span>
+                <span class="iconify twt" data-icon="ant-design:twitter-square-filled" style="color: white;"></span>
+            </div>    
         </div>
         <div class="cnt-footer">
-            <div class="info-sec">
+            <div>
                 <h5>INFORMATION</h5>
-                <ul>
-                    <li><a href="about_us.html">About us</a></li>
-                    <li><a href="#">Our services</a></li>
-                    <li><a href="#">Our agency</a></li>
-                </ul>
+                <div>
+                    <p><a href="about_us.html">About us</a></p>
+                    <p><a href="#">Our services</a></p>
+                    <p><a href="#">Our agency</a></p>
+                </div>
             </div>
-            <div class="support-sec">
+            <div>
                 <h5>CUSTOMER SUPPORT</h5>
-                <ul>
-                    <li><a href="contact.html">Contact us</a></li>
-                    <li><a href="#">Booking tips</a></li>
-                    <li><a href="#">FAQ</a></li>
-                </ul>
+                <div>
+                    <p><a href="contact.html">Contact us</a></p>
+                    <p><a href="#">Booking tips</a></p>
+                    <p><a href="#">FAQ</a></p>
+                </div>
             </div>
-            <div class="about-sec">
+            <div>
                 <h5>HAVE A QUESTION ?</h5>
-                <ul>
-                    <li><a href="#">Phone: <span> + 212 615 207 417 </span></a></li>
-                    <li><a href="#">Email: <span> contact@rentmenow.ma </span></a></li>
-                    <li><a href="#">Adresse: 125 Big fella St. Road, New York, Hi 5654775</a></li>
-                </ul>
+                <div>
+                    <p><a href="#">Phone: <span> + 212 615 207 417 </span></a></p>
+                    <p><a href="#">Email: <span> contact@rentmenow.ma </span></a></p>
+                    <p><a href="#">Adresse: 125 Big fella St. Road, New York, Hi 5654775</a></p>
+                </div>
             </div>
-        </div>
-        <div>
-            <ul class="social-media">
-                <li><span class="iconify" data-icon="ant-design:facebook-filled" style="color: white;"></span></li>
-                <li><span class="iconify insta" data-icon="ant-design:instagram-filled" style="color: white;"></span></li>
-                <li><span class="iconify twt" data-icon="ant-design:twitter-square-filled" style="color: white;"></span></li>
-            </ul>
         </div>
     </footer>
+
     <script src="https://code.iconify.design/2/2.1.0/iconify.min.js"></script>
     <script src="js/contact.js"></script>
+    <script src="js/nav.js"></script>
 </body>
 </html>

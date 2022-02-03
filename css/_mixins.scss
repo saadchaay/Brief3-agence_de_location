@@ -1,0 +1,538 @@
+@mixin start-title($size,$height) {
+    margin-top: 0em;
+    padding-top: 0em;
+    width: auto;
+    height: $height;
+    color: white;
+    .content-section {
+        padding-top: 13em;
+        h1 {
+        margin: 0;
+        font-size: $size * 2;
+        display: block;
+        text-align: left;
+        align-content: center;
+        }
+        div {
+        border: 5px solid #5200FF;
+        width: 35%;
+        }
+        h2 {
+            font-size: $size;
+        }
+    }
+    .cta-group {
+        align-items: center;
+        display: flex;
+        justify-content: flex-end;
+        button {
+            margin-top: 3em;
+            border: none;
+            border-radius: 10px;
+            padding: .5em .1em .5em .5em;
+            font-size: $size - .2em;
+            margin-left: .3em;
+            box-shadow: 0px 3.14765px 3.14765px rgba(0, 0, 0, 0.25);
+            letter-spacing: 0em;
+            .iconify {
+                width: 28px;
+                height: 28px;           
+            }
+        }
+        button.cta-au {
+            background: #E5E5E5;
+            color: black;
+        }
+        button.cta-cu {
+            background: var(--main-color);
+            color: white;
+        }
+    }
+}
+
+
+@mixin why-us($type,$size) {
+    width: auto;
+    height: auto;
+    padding: 1em 50px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    .small-line {
+        border: 5px solid #5200FF;
+        width: 60px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 0em;
+        margin-bottom: 2em;  
+    }
+    h2 {
+        margin-top: 0em;
+    }
+    .content-us {
+        display: flex;
+        align-items: center;
+        flex-direction: $type;
+        justify-content: space-between;
+        .img-blucar {
+            img {
+                width: 100%;
+                height: auto;
+            }
+        }
+        .content-text {
+            margin-left: 1em;
+            width: 90%;
+            height: auto;
+            p {
+                font-size: $size;
+                text-align: justify;
+                span {
+                    color: var(--main-color);
+                    font-weight: bold;
+                }
+            }
+            button {
+                justify-content: flex-end;
+                font-size: 1.1em;
+                background: var(--main-color);
+                color: white;
+                border: none;
+                border-radius: 10px;
+                padding: .8em 1.6em;
+                margin: auto 0em;
+            }
+        }
+    }
+}
+
+
+@mixin service-cts($typeWrap,$size) {
+    background: var(--main-color);
+    color: white;
+    height: auto;
+    h1 {
+        display: block;
+        text-align: center;
+        margin: 0;
+        padding: 1.2em;
+    }
+    .content-sr {
+        display: flex;
+        justify-content: center;
+        flex-wrap: $typeWrap;
+        div {
+            flex-wrap: wrap;
+            p {
+                font-size: $size;
+            }
+        }
+    }
+}
+
+
+@mixin offer-week($type,$widthImg,$marg) {
+    color: black;
+    height: auto;
+    margin: 0em 35px;
+    display: flex;
+    flex-direction: column;
+    h1 {
+        text-align: center;
+        margin: 0;
+        padding: 1.2em;
+        p {
+            font-size: .8em;
+            display: inline;
+            span {
+                color: var(--main-color);
+            }
+        }
+    }
+    .content-inside {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-direction: $type;
+        img {
+            width: $widthImg;
+            height: auto;
+        }
+        .detail-offer {
+            tr {
+                display: flex;
+                justify-content: space-between;
+                margin: $marg 0;
+            }
+            
+        }
+        button {
+            float: right;
+            // display: inline-block;
+            border: none;
+            border-radius: 9px;
+            background: var(--main-color);
+            padding: .6em 1.3em;
+            color: white;
+            font-size: .9em;
+            img {
+                width: 20px;
+                height: 20px;
+            }
+            &:hover {
+                cursor: pointer;
+            }
+        }
+    }
+}
+
+
+@mixin news-updates($type,$margTop) {
+    box-shadow: 1px 2px 3px 6px #bebebe;
+    margin: 0 30px;
+    text-align: center;
+    margin-top: $margTop;
+    h1 {
+        padding-top: 1.2em;
+        text-align: center;
+    }
+    .all-items {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: $type;
+        margin-top: 1em;
+        div.first-one{
+            background: #f1f1f1;
+            border: 2px solid #B8B8B8;
+            border-radius: 10px;
+            width: auto;
+            margin: 1em .5em;
+        }
+        img {
+            width: 100%;
+            border-radius: 10px;
+            height: 180px;
+        }
+        .items {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 2em;
+            p {
+                font-size: 0.6em;
+                text-align: left;
+            }
+            .date-items {
+                border: none;
+                background: var(--main-color);
+                margin-right: 2.1em;
+                border-radius: 10px;
+                color: white;
+                text-align: center;
+                padding: 0em .4em;
+                margin-bottom: 2em;
+                margin-left: .8em;
+                p {
+                    font-size: .8em;
+                    text-align: center;
+                    margin: 0.5em 0em;
+                    align-items: center;
+                }
+            }
+            .text-inside {
+                margin-left: 1em;
+                font-size: 1em;
+                text-align: left;
+            }
+        }
+    }
+}
+
+
+@mixin type-cars-name($type) {
+    margin-bottom: 2em;
+    ul {
+        font-size: .9em;
+        display: flex;
+        justify-content: space-around;
+        flex-direction: $type;
+        li {
+            margin-right: 2em;
+            background-color: white;
+            padding: .5em 1em;
+            border-bottom: 4px solid var(--main-color);
+            &:hover {
+                cursor: pointer;
+                background: var(--main-color);
+                border-bottom: 3px solid white ;
+                color: white;
+                transition: all .5s;
+                z-index: 1;
+            }
+        }
+        .list-cta {
+            background-color: var(--main-color);
+            border-bottom: 4px solid rgb(167, 167, 167);
+            color: white;
+            font-weight: bold;
+        }
+    }
+}
+
+@mixin main-content($type-all,$type-item,$widImg,$size) {
+    display: flex;
+    justify-content: center;
+    margin-top: 0;
+    .disabled-sec {
+        display: none;
+    }
+    .cars-bar {
+        display: flex;
+        flex-direction: $type-all;
+        width: 170%;
+        .car-desc {
+            display:flex;
+            justify-content: center;
+            flex-direction: $type-item;
+            border: 2px solid #B8B8B8;
+            margin: 0 0em 1em 0;
+            .img-car {
+                width: $widImg;
+                height: auto;
+            }
+            .text-desc {
+                margin: 0 1em;
+                margin-top: -1em;
+                p {
+                    font-size: $size;
+                    text-align: justify;
+                }
+                h6 {
+                    margin: 0 0 .5em 2em;
+                    color: var(--main-color);
+                }
+                button {
+                    border: none;
+                    border-radius: 5px;
+                    padding: .5em 1em;
+                    background: var(--main-color);
+                    margin-bottom: 1em;
+                    font-weight: bold;
+                }
+            }
+        }
+    }
+}
+
+@mixin container-book($top,$padd_left,$width) {
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    width: $width;
+    height: auto;
+    top: $top;
+    background: rgba(110, 47, 244, 0.45);
+    border: 2px solid #B8B8B8;
+    box-sizing: border-box;
+    padding: .5em $padd_left;
+    color: white;
+}
+
+@mixin vehicles-car($size) {
+    margin-top: 2.5em;
+    h3 {
+        font-size: $size;
+    }
+    .container {
+        background: none;
+        display: flex;
+        justify-content: space-between;
+        font-size: 1.1em;
+        .column {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            div {
+                background: #9f75f8;
+                border-radius: 10px;
+                margin: .5em;
+                padding: .2em .4em;
+            }
+        }
+        div {
+            // margin: .4em 0;
+            input[type=radio] {
+                width: 1.5em;
+                height: 1.5em;
+            }
+        }
+        
+    }
+}
+
+@mixin gearbox() {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    div {
+        h4 {
+            text-align: center;
+            align-content: center;
+            padding-top: .9em;
+        }
+    }
+    .chose-gearbox {
+        h4 {
+            font-size: 1.1em;
+            border: 4px solid white;
+        }
+    }
+}
+
+@mixin fuel-types() {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    div {
+        background: #9f75f8;
+        border-radius: 10px;
+        margin: .5em;
+        padding: .2em .4em;
+        input[type=radio] {
+            width: 1.5em;
+            height: 1.5em;
+        }
+    }
+}
+
+@mixin contact-form($type,$type_,$size,$size_) {
+    padding: 0;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    filter: drop-shadow(2px 6px 8px rgba(128, 128, 128, 0.6));
+    h3 {
+        display: block;
+        text-align: center;
+    }
+    form {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        .form-form {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            flex-direction: $type;
+            width: $size_;
+            div {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: $type_;
+                width: $size;
+            }
+            ::placeholder {
+                color: gray;
+                font-family: 'Poppins';
+                font-size: .9em; 
+                padding-left: 1em;
+            }
+            input, textarea {
+                background:rgb(238, 238, 238);
+                border: rgb(238, 238, 238);
+                margin: .2em;
+                width: 100%;
+                border-radius: 6px;
+            }
+            input[type="text"], input[type="email"], input[type="number"] {
+                height: 35px;
+            }
+            textarea {
+                height: 80px;
+                resize: none;
+            }
+        }
+    }
+}
+
+@mixin button-send($type) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: $type;
+    div {
+        width: 100%;
+        margin: .9em 0;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        span {
+            font-size: .75em;
+            margin-left: .4em;
+        }
+    }
+    button {
+        margin: .8em 0;
+        background: var(--main-color);
+        border: none;
+        border-radius: 5px;
+        color: white;
+        padding: .6em 2em;
+        font-size: 1em;
+        font-family: 'Poppins';
+        align-items: center;
+        &:hover {
+            cursor: pointer;
+        }
+    }
+}
+
+@mixin localisation($width) {
+    text-align: center;
+    iframe {
+        width: $width;
+        height: 400px;
+        border: none;
+    }
+}
+
+@mixin popup($top,$size,$width,$size_icon) {
+    position: absolute;
+    top: $top;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    text-align: center;
+    width: $width;
+    height: auto;
+    background: white;
+    color: color;
+    filter: drop-shadow(2px 6px 8px rgba(128, 128, 128, 0.6));
+    padding: 1.6em;
+    div {
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-end;
+        flex-direction: column;
+        text-align: left;
+        .iconify {
+            width: $size_icon;
+            height: $size_icon;
+            &:hover {
+                cursor: pointer;
+            }
+        }
+        th {
+            font-size: $size + .1;
+            white-space: nowrap;
+        }
+        td {
+            font-size: $size;
+        }
+    }
+}

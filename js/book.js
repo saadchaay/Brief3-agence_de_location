@@ -214,27 +214,25 @@ function getTotal(gearbox) {
 
 function displayResult(){
     let result = document.getElementById('result');
-    if(getTotal(gearbox) > 0){
+    if(parseInt(input_days.value) >= 1){
         if(fuel_val > 0){
-            if(parseInt(input_days.value) >= 1){
+            if(getTotal(gearbox) > 0){
                 result.innerHTML = getTotal(gearbox) + "€";
                 result.className = 'result-part';
-            }else {
-                result.innerHTML = "Error: please enter a number greater than 0.";
-            result.setAttribute('style','color:red;margin-top:.5em;');
-            } 
+            }
+            else {
+                result.innerHTML = "Error: chose the type of your vehicle.";
+                result.setAttribute('style','color:red;margin-top:.5em;');
+            }
         }
         else {
             result.innerHTML = "Error: chose the fuel of your vehicle.";
             result.setAttribute('style','color:red;margin-top:.5em;');
-        }
-    }
-    else {
-        result.innerHTML = "Error: chose the type of your vehicle.";
+        }  
+    }else {
+        result.innerHTML = "Error: please enter a number greater than 0.";
         result.setAttribute('style','color:red;margin-top:.5em;');
     }
     
 };
-
-
 
